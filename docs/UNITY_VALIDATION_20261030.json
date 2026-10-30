@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-30",
+  "status": "preview",
+  "environment": {
+    "platform": "Windows",
+    "unity": "6000.3.3f1",
+    "game": "CE12.0.2",
+    "renderPipeline": "Built-in"
+  },
+  "unityCSharpErrors": 0,
+  "mirrorWeavingCompleted": true,
+  "exactUninstallRestoredPaths": 953,
+  "defaultInstalledHashesMatched": 953,
+  "independentUninstallBothDirections": true,
+  "otherModSavedUiSelectionPreserved": true,
+  "resourceToggleCacheReset": true,
+  "nativeLocalHost": {
+    "passedChecks": 68,
+    "failedChecks": 0,
+    "finalDuringGameplayErrorGatePassed": true,
+    "remotePeerTested": false,
+    "platformBootstrapExcluded": true,
+    "connectionTestActors": true
+  },
+  "focusedHandover": {
+    "passedChecks": 9,
+    "failedChecks": 0,
+    "gameAndTeardownExceptions": 0
+  },
+  "observedExceptions": [
+    "UnityEditor.Search.SearchDatabase startup indexing exception",
+    "RagdollHead MissingReferenceException on Play teardown after the full run completed"
+  ],
+  "newStandalonePlayerTested": false,
+  "temporaryQaAssetsRemoved": true,
+  "releasedArtifactsUnchanged": true,
+  "fullGameplayRelease": "ce12-mods-v1.0.0-preview.1",
+  "preview2": {
+    "versions": {
+      "scp939": "1.0.1",
+      "scp3114": "2.0.1"
+    },
+    "payloadHashes": 904,
+    "defaultInstalledHashesMatched": 941,
+    "exactUninstallRestoredPaths": 941,
+    "unityCSharpErrors": 0,
+    "rolePrefabsMissingScripts": 0,
+    "baseSourceFontFacesResolved": 5,
+    "baseNormalTextureResolved": true,
+    "gameplayCodeUnchanged": true,
+    "fullGameplayRepeated": false,
+    "publicationLintFailures": 0,
+    "publicationLintWarnings": 0
+  }
+}

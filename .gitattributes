@@ -13,3 +13,4 @@
 *.controller -text
 *.overrideController -text
 Sources/Content/** -text
+Sources/Content/**/manifest.json -text whitespace=cr-at-eol

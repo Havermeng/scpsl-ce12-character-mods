@@ -2,7 +2,7 @@
   "schema": 2,
   "id": "scp939-ce12",
   "name": "SCP-939: наша версия / Custom edition",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "target": "SCP:SL CE 12.0.2 / Unity 6000.3 LTS / Built-in RP",
   "components": [
     {

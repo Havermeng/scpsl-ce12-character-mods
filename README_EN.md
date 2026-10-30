@@ -2,7 +2,7 @@
 
 [Русский](README.md) · [Install/uninstall](docs/INSTALL_EN.md) · [Components](docs/COMPONENTS.md) · [Validation](docs/VALIDATION.md)
 
-**Preview:** installer checks and GitHub Actions passed; fresh Unity gameplay acceptance is still pending.
+**Preview:** fresh Unity import, compilation/Mirror weaving, independent removal and 68 local-host gameplay checks passed. A new standalone player and independent remote peer have not been tested. See the log limitations in [VALIDATION](docs/VALIDATION.md).
 
 Two separate Unity packages for **SCP:SL Community Edition 12.0.2**, **Unity 6000.3 LTS**, **Built-in RP**:
 

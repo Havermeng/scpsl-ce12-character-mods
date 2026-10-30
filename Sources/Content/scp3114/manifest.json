@@ -2,7 +2,7 @@
   "schema": 2,
   "id": "scp3114-ce12",
   "name": "SCP-3114",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "target": "SCP:SL CE 12.0.2 / Unity 6000.3 LTS / Built-in RP",
   "components": [
     {
@@ -449,7 +449,7 @@
       "component": "core",
       "kind": "add",
       "blob": "files/Assets/Scp3114Port/Generated/Materials/projectile blood sheet.mat",
-      "sha256": "737688b9c736cfcc676c3afa00256bf8c44bf6818d9d6909dda8363f419dcbd9"
+      "sha256": "2f0be3705276c653ece99ba2c7f39229d4a1f32eb85e9eace43515f48e34308c"
     },
     {
       "path": "Assets/Scp3114Port/Generated/Materials/projectile blood sheet.mat.meta",
@@ -1376,34 +1376,6 @@
       "sha256": "62384a15ab3554ee0af4659d792ba6596b5a93d162231ade28ac087e039ab6a9"
     },
     {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/resources_assets_5694_Teko-Medium.ttf",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/resources_assets_5694_Teko-Medium.ttf",
-      "sha256": "6db4989c009c27c3df233159cb6512fc11745e6df11dd49d6c93ec274d3f952d"
-    },
-    {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/resources_assets_5694_Teko-Medium.ttf.meta",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/resources_assets_5694_Teko-Medium.ttf.meta",
-      "sha256": "dd8056072c480993d9d20cdb6254aca7ada21f0ea280fc022ce98cd56a45503f"
-    },
-    {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/resources_assets_5699_Teko-Regular.ttf",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/resources_assets_5699_Teko-Regular.ttf",
-      "sha256": "796ee74192e4a55d19c972a4b98e012253d97a17a360a33d04377e15dedc5003"
-    },
-    {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/resources_assets_5699_Teko-Regular.ttf.meta",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/resources_assets_5699_Teko-Regular.ttf.meta",
-      "sha256": "02436024734e89b58d0bf49c3bd5a740fc0140d5fbb3cd8f40fe670ab282dcd7"
-    },
-    {
       "path": "Assets/Scp3114Port/NativePresentation/Data/resources_assets_5749_Mouse_X.asset",
       "component": "core",
       "kind": "add",
@@ -1618,7 +1590,7 @@
       "component": "core",
       "kind": "add",
       "blob": "files/Assets/Scp3114Port/NativePresentation/Data/resources_assets_63433_DynamicRoboto-Bold.asset",
-      "sha256": "2a0afe874bc7936ea31c5104169e15fd1f091a62e372152f827c95f1e9eba14f"
+      "sha256": "550b9f7c74dc65d3f593b82c92c7b0a15f2b436f94e365d8c71a9c1f0907c89d"
     },
     {
       "path": "Assets/Scp3114Port/NativePresentation/Data/resources_assets_63433_DynamicRoboto-Bold.asset.meta",
@@ -1632,7 +1604,7 @@
       "component": "core",
       "kind": "add",
       "blob": "files/Assets/Scp3114Port/NativePresentation/Data/resources_assets_63437_DynamicTeko-Medium.asset",
-      "sha256": "dd59936c14fcdbe7b345a5535121b05f1ec8423d4f4b4f4309e08e8c2b03d878"
+      "sha256": "84a3574b2781dbffa3092ea52a9f71677d956ffcef1a853db710f6115e55d45e"
     },
     {
       "path": "Assets/Scp3114Port/NativePresentation/Data/resources_assets_63437_DynamicTeko-Medium.asset.meta",
@@ -1646,7 +1618,7 @@
       "component": "core",
       "kind": "add",
       "blob": "files/Assets/Scp3114Port/NativePresentation/Data/resources_assets_63438_DynamicTeko-Regular.asset",
-      "sha256": "43aff66559154b16bf2e04be5eb0c117022fa8e975a8fc6bd57935d92e5c6d9f"
+      "sha256": "9ff1a5567a697c67cd30799bbcd159f1946e2ccac06dce9ee26898599fd9398c"
     },
     {
       "path": "Assets/Scp3114Port/NativePresentation/Data/resources_assets_63438_DynamicTeko-Regular.asset.meta",
@@ -1894,48 +1866,6 @@
       "sha256": "2f064013fa4778d81dcfa3b49f7e04ecb1c9622117de998c1cb9a68fdf104f8a"
     },
     {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_35_Roboto-Light.ttf",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_35_Roboto-Light.ttf",
-      "sha256": "db02096a91c20ab62d459001a1059bc8d78caa35d637dc91494c4440815a6ac1"
-    },
-    {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_35_Roboto-Light.ttf.meta",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_35_Roboto-Light.ttf.meta",
-      "sha256": "a1c2b0abaffe9a5651379918030e68d0e842bec61b7d2713d5f937c28906a163"
-    },
-    {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_37_Roboto-Bold.ttf",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_37_Roboto-Bold.ttf",
-      "sha256": "c9cc991deb5d27f267830a19f2301eb164d9e61ec08669c1a1a291c5620ff40a"
-    },
-    {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_37_Roboto-Bold.ttf.meta",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_37_Roboto-Bold.ttf.meta",
-      "sha256": "d746bd5dc4c1ead0091a8ba2da091555f1574763623f2313e558ae36e61a1329"
-    },
-    {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_39_Roboto-Thin.ttf",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_39_Roboto-Thin.ttf",
-      "sha256": "dcac562815b575e6b821bae5fd245fea6590bb3b597fd5b96eae6acccb21d03c"
-    },
-    {
-      "path": "Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_39_Roboto-Thin.ttf.meta",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_39_Roboto-Thin.ttf.meta",
-      "sha256": "446689809fb20b895ab3774025e7965c3895a84510b844cfd229e18498141b62"
-    },
-    {
       "path": "Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_41_LoadingCircleCrisp.asset",
       "component": "core",
       "kind": "add",
@@ -1954,7 +1884,7 @@
       "component": "core",
       "kind": "add",
       "blob": "files/Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_45_DynamicRoboto-Light.asset",
-      "sha256": "cd61b266376a31e4695ebbced9b2b721552b5241d23a928a12a58015e024b990"
+      "sha256": "83e67c8e9ee0d40c694b8309b2d26bef032e6c00de5f7935998cba5ee1b4c254"
     },
     {
       "path": "Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_45_DynamicRoboto-Light.asset.meta",
@@ -1968,7 +1898,7 @@
       "component": "core",
       "kind": "add",
       "blob": "files/Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_46_DynamicRoboto-Thin.asset",
-      "sha256": "dfcd91ab0a994c58b69a0475dd40b3de1d6e470401582a68abf47e97014f5f3a"
+      "sha256": "f975971166627285bba1c9584a0225cb9930ee70741a632d822409ce860d589f"
     },
     {
       "path": "Assets/Scp3114Port/NativePresentation/Data/sharedassets0_assets_46_DynamicRoboto-Thin.asset.meta",
@@ -4064,20 +3994,6 @@
       "sha256": "e9f6f135964ee7bc931e0f8cff58e0c5c0e0b813f2aac7341988dbd09fcca7af"
     },
     {
-      "path": "Assets/Scp3114Port/Source/Texture2D/WaterNorm.png",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/Source/Texture2D/WaterNorm.png",
-      "sha256": "74acb3371481783817f327c3c3f86b1affa7e936acdf845acae29430c43c918b"
-    },
-    {
-      "path": "Assets/Scp3114Port/Source/Texture2D/WaterNorm.png.meta",
-      "component": "core",
-      "kind": "add",
-      "blob": "files/Assets/Scp3114Port/Source/Texture2D/WaterNorm.png.meta",
-      "sha256": "4f644287a59a7940c94dd343131abe27a833008d9dd82681fa9809161c6bccaf"
-    },
-    {
       "path": "Assets/Scripts/Assembly-CSharp/CommandSystem/Commands/RemoteAdmin/Scp3114HistoryCommand.cs",
       "component": "core",
       "kind": "add",
@@ -5536,6 +5452,31 @@
       "component": "core"
     },
     {
+      "path": "Assets/Font/Roboto-Bold New.ttf",
+      "guid": "8f734f707fa3777438886003acaa0001",
+      "component": "core"
+    },
+    {
+      "path": "Assets/Font/Roboto-Light.ttf",
+      "guid": "fd3dc318b68e1994486a60a8a3292494",
+      "component": "core"
+    },
+    {
+      "path": "Assets/Font/Roboto-Thin_0.ttf",
+      "guid": "98036bb5b39beb741867ac5e93a3a2a6",
+      "component": "core"
+    },
+    {
+      "path": "Assets/Font/Teko-Medium.ttf",
+      "guid": "9b5b938e5a706284ea492311270c58d7",
+      "component": "core"
+    },
+    {
+      "path": "Assets/Font/Teko-Regular.ttf",
+      "guid": "372f1b755a162c14bb56134fd26977bb",
+      "component": "core"
+    },
+    {
       "path": "Assets/Material/TemplateDissolve.mat",
       "guid": "1c6b43832a87c43468a2b9501716a9c6",
       "component": "core"
@@ -5646,13 +5587,18 @@
       "component": "core"
     },
     {
-      "path": "Assets/Texture2D/WeaponDissolveGradient.png",
-      "guid": "454c461f09ab6e041858649099a10b00",
+      "path": "Assets/Texture2D/dissolve-guide.png",
+      "guid": "07a79cafc94b0ef43949f0b02caf8be4",
       "component": "core"
     },
     {
-      "path": "Assets/Texture2D/dissolve-guide.png",
-      "guid": "07a79cafc94b0ef43949f0b02caf8be4",
+      "path": "Assets/Texture2D/WaterNorm.png",
+      "guid": "ea6f9fc1dfd67ca4b8b3c3dda4251105",
+      "component": "core"
+    },
+    {
+      "path": "Assets/Texture2D/WeaponDissolveGradient.png",
+      "guid": "454c461f09ab6e041858649099a10b00",
       "component": "core"
     }
   ]
