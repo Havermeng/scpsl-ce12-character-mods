@@ -2,6 +2,8 @@
 
 [English](README_EN.md) · [Установка и удаление](docs/INSTALL_RU.md) · [Компоненты](docs/COMPONENTS.md) · [Проверки](docs/VALIDATION.md)
 
+**Статус: Preview.** Установочные проверки и GitHub Actions пройдены; свежая игровая проверка в Unity ещё не завершена.
+
 Два отдельных Unity-мода для **SCP:SL Community Edition 12.0.2**:
 
 - **SCP-939** — наша одетая 939, поглаживания, объятия, прогулки за руку, подарки с передачей предмета, свидания и ужин, реплики и симпатия.
@@ -11,7 +13,11 @@
 
 ## Скачать
 
-Готовые пакеты размещаются в [Releases](https://github.com/Havermeng/scpsl-ce12-character-mods/releases). Для установки скачайте нужный **.unitypackage**, а не Source code.zip. Точный статус проверок указан в [VALIDATION](docs/VALIDATION.md).
+Готовые пакеты: [страница предрелиза](https://github.com/Havermeng/scpsl-ce12-character-mods/releases/tag/ce12-mods-v1.0.0-preview.1).
+
+- [Скачать SCP-939 — 5,4 МБ](https://github.com/Havermeng/scpsl-ce12-character-mods/releases/download/ce12-mods-v1.0.0-preview.1/SCP939-CE12-1.0.0.unitypackage).
+- [Скачать SCP-3114 — 55,4 МБ](https://github.com/Havermeng/scpsl-ce12-character-mods/releases/download/ce12-mods-v1.0.0-preview.1/SCP3114-CE12-2.0.0.unitypackage).
+ Для установки скачайте нужный **.unitypackage**, а не Source code.zip. Точный статус проверок указан в [VALIDATION](docs/VALIDATION.md).
 
 **Цель:** Unity **6000.3 LTS**, Built-in Render Pipeline, исходный проект **CE 12.0.2**. Это моды Unity-проекта; они не устанавливаются в готовую Steam-игру и не являются плагинами EXILED. Другие декомпиляции, платформы и версии Unity проверяются отдельно.
 

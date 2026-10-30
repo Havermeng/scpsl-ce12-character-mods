@@ -50,5 +50,14 @@
     ],
     "result": "PASS",
     "note": "Serialized GUID graph and payload hashes; Unity import/local object IDs/visual runtime remain separate checks."
+  },
+  "publication": {
+    "release": "https://github.com/Havermeng/scpsl-ce12-character-mods/releases/tag/ce12-mods-v1.0.0-preview.1",
+    "sourceTag": "ce12-mods-v1.0.0-preview.1",
+    "sourceCommit": "9e169d54027ac4eef31c361c33283fbd3601efb2",
+    "ciRun": "https://github.com/Havermeng/scpsl-ce12-character-mods/actions/runs/40992874898",
+    "ciResult": "success",
+    "anonymousDownloads": "PASS",
+    "preview": true
   }
 }

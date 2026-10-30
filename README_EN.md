@@ -2,6 +2,8 @@
 
 [Русский](README.md) · [Install/uninstall](docs/INSTALL_EN.md) · [Components](docs/COMPONENTS.md) · [Validation](docs/VALIDATION.md)
 
+**Preview:** installer checks and GitHub Actions passed; fresh Unity gameplay acceptance is still pending.
+
 Two separate Unity packages for **SCP:SL Community Edition 12.0.2**, **Unity 6000.3 LTS**, **Built-in RP**:
 
 - **Custom SCP-939:** dressed variant, petting, hugs, hand-holding, gifts with item handover animation, dates/dinner, dialogue and affection.

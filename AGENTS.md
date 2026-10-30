@@ -6,4 +6,4 @@ Sources/Manager: shared editor installer. Sources/Content/*/manifest.json: compo
 
 ## Status
 
-2026-10-30: publication preparation. Engine37PASS, installer matrix43PASS; payload/GUID graphPASS; game2521C# and editor2C# compile0errors. Fresh Unity import/Mirror weave/gameplay remains pending. See docs/VALIDATION.md; compilation is not runtime acceptance. Legacy3114 1.x requires original uninstall first.
+2026-10-30: public preview released at https://github.com/Havermeng/scpsl-ce12-character-mods/releases/tag/ce12-mods-v1.0.0-preview.1. Source tag9e169d5. CI40992874898 passed; anonymous downloads and SHA256 match for both packages. Engine37PASS, installer matrix43PASS; payload/GUID graphPASS; game2521C# and editor2C# compile0errors. Fresh Unity import/Mirror weave/gameplay remains pending. See docs/VALIDATION.md; compilation is not runtime acceptance. Legacy3114 1.x requires original uninstall first.
