@@ -1,0 +1,54 @@
+{
+  "engineChecks": 37,
+  "installerScenarios": 43,
+  "targetPaths": 958,
+  "payloadHashes": 916,
+  "freshUnityRuntime": "pending",
+  "compileVariants": [
+    {
+      "variant": "939-only",
+      "exit": 0,
+      "errors": 0,
+      "sources": 2471
+    },
+    {
+      "variant": "3114-only",
+      "exit": 0,
+      "errors": 0,
+      "sources": 2499
+    },
+    {
+      "variant": "both-core",
+      "exit": 0,
+      "errors": 0,
+      "sources": 2519
+    }
+  ],
+  "assetGraph": {
+    "payloadHashes": 916,
+    "scenarios": [
+      {
+        "scenario": "both-default",
+        "assets": 236,
+        "missing": []
+      },
+      {
+        "scenario": "both-core",
+        "assets": 143,
+        "missing": []
+      },
+      {
+        "scenario": "939-all",
+        "assets": 78,
+        "missing": []
+      },
+      {
+        "scenario": "3114-all",
+        "assets": 158,
+        "missing": []
+      }
+    ],
+    "result": "PASS",
+    "note": "Serialized GUID graph and payload hashes; Unity import/local object IDs/visual runtime remain separate checks."
+  }
+}

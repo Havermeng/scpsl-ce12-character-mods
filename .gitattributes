@@ -1,0 +1,15 @@
+*.cs text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+*.csproj text eol=lf
+*.asset -text
+*.meta -text
+*.prefab -text
+*.mat -text
+*.anim -text
+*.controller -text
+*.overrideController -text
+Sources/Content/** -text

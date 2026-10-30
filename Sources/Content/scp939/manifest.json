@@ -1,0 +1,4078 @@
+{
+  "schema": 2,
+  "id": "scp939-ce12",
+  "name": "SCP-939: наша версия / Custom edition",
+  "version": "1.0.0",
+  "target": "SCP:SL CE 12.0.2 / Unity 6000.3 LTS / Built-in RP",
+  "components": [
+    {
+      "id": "core",
+      "name": "Основа SCP-939 / SCP-939 core",
+      "defaultEnabled": true,
+      "required": true,
+      "requires": [],
+      "description": ""
+    },
+    {
+      "id": "outfit",
+      "name": "Наша одетая SCP-939 / Our dressed SCP-939 (role 22)",
+      "defaultEnabled": true,
+      "required": false,
+      "requires": [],
+      "description": ""
+    },
+    {
+      "id": "interactions",
+      "name": "Поглаживания, объятия, прогулки / Pet, hug, hand-hold",
+      "defaultEnabled": true,
+      "required": false,
+      "requires": [],
+      "description": ""
+    },
+    {
+      "id": "gifts",
+      "name": "Подарки и анимация передачи / Gifts and handover animation",
+      "defaultEnabled": true,
+      "required": false,
+      "requires": [
+        "interactions"
+      ],
+      "description": ""
+    },
+    {
+      "id": "dates",
+      "name": "Свидания и ужин / Dates and dinner",
+      "defaultEnabled": true,
+      "required": false,
+      "requires": [
+        "interactions"
+      ],
+      "description": ""
+    },
+    {
+      "id": "dialogue",
+      "name": "Реплики и симпатия / Dialogue and affection",
+      "defaultEnabled": true,
+      "required": false,
+      "requires": [
+        "interactions"
+      ],
+      "description": ""
+    },
+    {
+      "id": "voice",
+      "name": "Свои WAV-записи реплик / Use your own WAV voice clips",
+      "defaultEnabled": false,
+      "required": false,
+      "requires": [
+        "interactions",
+        "dialogue"
+      ],
+      "description": "Готовые голосовые записи не включены. / Voice recordings are not bundled."
+    }
+  ],
+  "entries": [
+    {
+      "path": "Assets/GameObject/SCP-939 Model Dressed.prefab",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/GameObject/SCP-939 Model Dressed.prefab",
+      "sha256": "c33cb9ea9ab5283f923c5a8c79dbcf31c5ce923f800c4899117bf4b94614e421"
+    },
+    {
+      "path": "Assets/GameObject/SCP-939 Model Dressed.prefab.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/GameObject/SCP-939 Model Dressed.prefab.meta",
+      "sha256": "5226ae76bd7a2741a51561a95781e1b233d77c7ea3fc7b99ca04513f7e84f182"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor.meta",
+      "sha256": "474c0d024792a1716afe1973f8e64fbd553589bc1991b4c7ff75a0a9d9afe79e"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Balloon_Red.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Balloon_Red.mat",
+      "sha256": "53bd73bcf73d1b1bf03ed3b10a1f6940e506be5ef1b0e40a0ab71d32845470cf"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Balloon_Red.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Balloon_Red.mat.meta",
+      "sha256": "dc02d25b297c29445ab5076dc57bce948aaf2d466ec3c5e264174aa827f47bd1"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Candle_Flame.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Candle_Flame.mat",
+      "sha256": "1e76b07c6b9dae26043a1e4a9a46c17e547d52d2ec2d111d3c5f46a7efde522d"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Candle_Flame.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Candle_Flame.mat.meta",
+      "sha256": "a65461279dd37d10ab68be4f709f2b67e32d9c8f4e8984365aeffd70fa988560"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Candle_Wax.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Candle_Wax.mat",
+      "sha256": "9a9d72ce3e6dd7c6f926c46572b587fc06b9222c8651c187e522c8d9d057d5bc"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Candle_Wax.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Candle_Wax.mat.meta",
+      "sha256": "e764e97d2cbc58bd30c475391697470eaf1db73a79783fbcfd4b2ccc6d849d91"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Curtain_Back.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Curtain_Back.asset",
+      "sha256": "11978f4c17e94adcf9adadf2768a61a1c433f6b18e363ae503ae231b171c1801"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Curtain_Back.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Curtain_Back.asset.meta",
+      "sha256": "5a2e5df1dfed60980f620db75a381bdbc3df0c02c8d53efef8fae7e2173d0d68"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Curtain_Front.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Curtain_Front.asset",
+      "sha256": "43b9c100f0db83a96d16bd007c92689a56954fae0dea613c37f91d265c06f775"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Curtain_Front.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Curtain_Front.asset.meta",
+      "sha256": "d37ab6e9460e7fdfbfa8c1d27c1e40d8c21d505865e9b534f2656510edfa46fe"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Curtain_Side.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Curtain_Side.asset",
+      "sha256": "7969f0e519fddc91942b4d47ecdd245ff93d40925feb55f74626e2cef6b7c0c2"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Curtain_Side.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Curtain_Side.asset.meta",
+      "sha256": "b0b7399f2c248555867bf93d63f26ba179277ac7ece19d8e9fae374fa190903b"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Fairy_Bulb.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Fairy_Bulb.mat",
+      "sha256": "458820b4ce0bdac8bdbab2580f9bb7d0ca8144f86be02a4f7ebcf03e2aedc46a"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Fairy_Bulb.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Fairy_Bulb.mat.meta",
+      "sha256": "ec06518300c6f1389208557f583653939f633ae06268058d17664d0db9daf066"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Heart_Balloon.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Heart_Balloon.asset",
+      "sha256": "0c04ca12c04547bd32920f8a1f98e0340d2a69d8a16badbfb48642e3bbe66732"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Heart_Balloon.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Heart_Balloon.asset.meta",
+      "sha256": "1da7e02341f0076fac3706755c89f5fc01ea4d1c9f5d744f7f45419c31a4a65f"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Neon_Heart.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Neon_Heart.asset",
+      "sha256": "533396de7e1ff9fdc420f953528159c376c7cc7ae4596b760b5bb3af14bbf2d8"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Neon_Heart.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Neon_Heart.asset.meta",
+      "sha256": "01b768c66b74af4bf536bca92e5da94ff7b49d61ebb37dd8e2dc388f22c23d31"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Neon_Pink.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Neon_Pink.mat",
+      "sha256": "9aad75313dc0c23427ddda96f3682bdef70e8a4b65f703b59c8081ae9bc6996a"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Neon_Pink.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Neon_Pink.mat.meta",
+      "sha256": "31f0c932b4da433398339f263f65d11c8e790c2937e6cbdf8755aa7caaa31df8"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Ribbon.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Ribbon.mat",
+      "sha256": "a48fbc1de13b387bbe2fcbe23949a163b5fa37f4d879837b4209649e9237bd79"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Ribbon.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Ribbon.mat.meta",
+      "sha256": "73d3b1a0e6995c11d5c1cae5752d2b851c8759f50d32d019496b20cb9d7bb705"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Rod.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Rod.mat",
+      "sha256": "015aecd8d6c002b043c61ddb3261cbb9f4c2cc9fb51aac15f868cd99b07af1b4"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Rod.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Rod.mat.meta",
+      "sha256": "5368be824c8580d879f7931ea0f95511b7a668527d17f048206c9e31c125c3a0"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Velvet.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Velvet.mat",
+      "sha256": "ccc9a8fd62d2117338e419057f4fa062b380ce9254faba0da3fe53bce9da30e3"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Velvet.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Velvet.mat.meta",
+      "sha256": "ad14dd102015b1b3beaea21abfab879baa4ddaefca540b631d6e105266472ba3"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Wire.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Wire.mat",
+      "sha256": "660cd16934b5835d179ab4143b6e6b3653c0077f9497103a6d8b359f99072de1"
+    },
+    {
+      "path": "Assets/Resources/DateRoomDecor/Wire.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateRoomDecor/Wire.mat.meta",
+      "sha256": "be78f59398b090d183a0dcb852b2d0dffc376cd38cc3c4ee6bdd9553524ddba3"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails.meta",
+      "sha256": "00fa7ebbca159080d049b5fb578b784ca5896bb3f9acc7ba6ba90ae25fbb6d9a"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Basil leaf.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Basil leaf.asset",
+      "sha256": "9c7003975445dbc3391bfb81ea63f7c285d67bc091b7519b0b8fbde0b3b8debd"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Basil leaf.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Basil leaf.asset.meta",
+      "sha256": "f745a511832cb9389318a88b1046ee99da9d925c2e6e36eef8fa0e006cc0b3dd"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Basil.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Basil.mat",
+      "sha256": "7b61af28673cc30bc52192220f0db9d4adc1518438ce206acbd0ecb465e854b6"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Basil.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Basil.mat.meta",
+      "sha256": "248a9baa23a4d8e52ab624a66d1358a066b7ad3f962999ed4ea6ad76a4d2484b"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Crystal.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Crystal.mat",
+      "sha256": "4842cdb3fd764e1d53a8485a64a04db7f9e36aaff55e24994fd6b4a380047622"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Crystal.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Crystal.mat.meta",
+      "sha256": "54e0de757f083e3592ad19783161a9c7dc739324e15cc028f6418129de2f7862"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Cutlery silver.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Cutlery silver.mat",
+      "sha256": "c0273b4dc7759d776084e67ae28ecdac5bf3d2f14ab4b97c1c183d686b90be28"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Cutlery silver.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Cutlery silver.mat.meta",
+      "sha256": "2ed56264e0dad557046e08893b5fb5a7fe390b8a8c06e8975d8192a75df343a1"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Fork.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Fork.asset",
+      "sha256": "789fc98609a4d1dc605394e261317aa5d68d6f65802bce509cf1794bc3c47e2a"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Fork.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Fork.asset.meta",
+      "sha256": "8164ae35a7f1710ed423f94564bd7662fc2f7351c3389da50c3af60f666298be"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Goblet.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Goblet.asset",
+      "sha256": "68accdd4b6a17ac08e4df07dc34375f4d1133c175510ffdf08b8f59e011b1f96"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Goblet.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Goblet.asset.meta",
+      "sha256": "6218e88bbd02c5e913faadf1a5a4e45595e8ec436c0f0d0459067e75fd809704"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Golden pasta.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Golden pasta.mat",
+      "sha256": "fd27bb9098c222acfe54b33d569517098722abf9421f782193192a774361b504"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Golden pasta.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Golden pasta.mat.meta",
+      "sha256": "cf1c25aac2e2fe837359a17e8100eefbc7e12cef243d058b8c55509fef731d21"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Knife.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Knife.asset",
+      "sha256": "b6349855f52230f7e53a6d42a6aed1cbd1c32dd09c7b54a406ad19be6c7d6eeb"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Knife.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Knife.asset.meta",
+      "sha256": "9e0f63744a3396b5ccbf86adb6ffa5c77614da4ecaf20d5a2be8f41dfb8cef09"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Meatball.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Meatball.asset",
+      "sha256": "8871ee0283da45946bdb8d51d55de67089720dd2413f920ae77b4094d81d5db3"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Meatball.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Meatball.asset.meta",
+      "sha256": "029b048e1c91bc0b1065777bd9d580ee65ef470d43ba9ec89bcf002b27809873"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Noodles.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Noodles.asset",
+      "sha256": "9f9e8d11aa29a11d6c222bd2d9339ef94dc89d9f7c1a00a0a97d9a53c257d68f"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Noodles.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Noodles.asset.meta",
+      "sha256": "5a54c5909441555ef126ffda6f848536fa71e076c0b71508257b92565301a5fa"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Plate.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Plate.asset",
+      "sha256": "9957cc2273e7bc666d3097034f476b998d24ecca53b614329283341b862627da"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Plate.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Plate.asset.meta",
+      "sha256": "449c872c6f4434746706b52584f5b7a814df227db387b91d32a380085a278690"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Porcelain.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Porcelain.mat",
+      "sha256": "1082607d579dd695875bbd0b04c1abf3557ee4aa5862bb80d39734f97002d389"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Porcelain.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Porcelain.mat.meta",
+      "sha256": "607a9b03c1a628540fffd2ce7dc96331b8d0537d7e9c87cb7427ac35dadab2d0"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Roasted meatballs.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Roasted meatballs.mat",
+      "sha256": "ef7b9eb4fa611e8cf3f22260911123038d95b6a3dd348ef73ea499d96ddb50fd"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Roasted meatballs.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Roasted meatballs.mat.meta",
+      "sha256": "fccd12013a961aaec6c67640a859094e7efe524385f2db4cb8a111a102c447a2"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Rose leaf.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Rose leaf.asset",
+      "sha256": "73738bc9f27e645d48ca05db09d80d8688095fad7bb6b2cc733cdf747c7a3703"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Rose leaf.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Rose leaf.asset.meta",
+      "sha256": "ee28467cd3e4b9f257b932103a28e5192beff45c52b8b7d4f4a9fe1e39d84397"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Rose petals.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Rose petals.asset",
+      "sha256": "7495a21da09046e3f9b753993018db06b6a8478368853bb1cefa661ba1eca1d8"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Rose petals.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Rose petals.asset.meta",
+      "sha256": "c3eb0f995cb74307df3856460a0a5f2da9ee24bcd07c8a7fce307b5fb9b169c9"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Rose red.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Rose red.mat",
+      "sha256": "6760f5ee1d1d320088773331379bdb83759d40bd62af91fd4642cce6ccf0e72d"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Rose red.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Rose red.mat.meta",
+      "sha256": "6d736ce9f6d76b196049fb3ac572c3ea193e3a69a8adb57015440d6d4b1cf917"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Rose stem.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Rose stem.asset",
+      "sha256": "f54339f7b44680779eebcf53538ef311603d6cfc5ed543604665eed27816133f"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Rose stem.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Rose stem.asset.meta",
+      "sha256": "981a43de86e59be93dd5e819f48fd9ba604444337409889cd639f771faa2f3e0"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Sauce.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Sauce.asset",
+      "sha256": "5f5b92b6589fbb4487e6798fbe0aa759e097960a7a97a97342def062b2384384"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Sauce.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Sauce.asset.meta",
+      "sha256": "500009d652040334bc316305bd728ca0bfff5a0c2586a4b7b25d295a98455747"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Tomato sauce.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Tomato sauce.mat",
+      "sha256": "d5825ec4a09b05b86b943b1b86132bae6aa95efc268e130a317beb345f3d5e91"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Tomato sauce.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Tomato sauce.mat.meta",
+      "sha256": "d2e2d5b7f1582415e9d576b1329148ebe5584b65ebf63759510d52f06fb11e18"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Vase porcelain.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Vase porcelain.mat",
+      "sha256": "dbdbc2dfd3be4d5eafd437938fcd01e900007e0989bde3a6544f6f65fbb84e09"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Vase porcelain.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Vase porcelain.mat.meta",
+      "sha256": "91647c52f9258203d28fc8635c808ea3bd9f2f224dfc1b253c70e3e6e613669f"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Vase.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Vase.asset",
+      "sha256": "07141d1cbdd307c23e0c54bf4405fb94fb34bfa9888ba2e905065e79922e9b5a"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Vase.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Vase.asset.meta",
+      "sha256": "9140d6f1a359dca57e2a5861ff623d90ff5684b597d1a1a9662225b646a5b109"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Wine.asset",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Wine.asset",
+      "sha256": "dac231998706fff14126cc2b45a1eaebed1dcd91afb447db6541808c96d43bc7"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Wine.asset.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Wine.asset.meta",
+      "sha256": "20a2303cb24902e7b40f22db07762a76c9937d2f307a4a78c415d4a00194bb73"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Wine.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Wine.mat",
+      "sha256": "2e36d7b7ba06bb403b6f90b657a13f8f9560cd4b546417e69ff6b17830cdf094"
+    },
+    {
+      "path": "Assets/Resources/DateTableDetails/Wine.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/DateTableDetails/Wine.mat.meta",
+      "sha256": "69a56cafeb6b7b818111cb87c29359f70492ade8f908bf38d302ce3c3cb68081"
+    },
+    {
+      "path": "Assets/Resources/Defined Roles/Scp939Dressed.prefab",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Defined Roles/Scp939Dressed.prefab",
+      "sha256": "ff109a9a50a5f800c8f4f532b0e3255d6a2913622a6142730c39e982c5f3109b"
+    },
+    {
+      "path": "Assets/Resources/Defined Roles/Scp939Dressed.prefab.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Defined Roles/Scp939Dressed.prefab.meta",
+      "sha256": "fa14aa874e1e84a95b62ae5a63e8c2d47d57a6f3477f738e43e77e5ac58d8a49"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod.meta",
+      "sha256": "e0c728d0500542a2a579b540490741a38e18b13fb43d49f0ecf878d4f5efc67e"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/Core.txt",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/Core.txt",
+      "sha256": "8c944e7d01530dad525041472e56b817c10d4af7d38c288ff3c4fbe0164087d6"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/Core.txt.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/Core.txt.meta",
+      "sha256": "190cde3ef759094b025cd23ef5967ce2b380ddc4180bd98b112445855def63b3"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/dates.txt",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/dates.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/dates.txt.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/dates.txt.meta",
+      "sha256": "59828a095ed5fe424ca450ba42db90fc82acdbaa21e21b8795f65133edb7043b"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/dialogue.txt",
+      "component": "dialogue",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/dialogue.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/dialogue.txt.meta",
+      "component": "dialogue",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/dialogue.txt.meta",
+      "sha256": "351adc74d29e1319f9d1b6fbcb06ff6348e2eb26a387893bfaf2b5b92c45589b"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/gifts.txt",
+      "component": "gifts",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/gifts.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/gifts.txt.meta",
+      "component": "gifts",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/gifts.txt.meta",
+      "sha256": "ca2e797652bdf719dcfa237bb9b5d440d8db9ae7f6b8137eaf389e71e5b7d526"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/interactions.txt",
+      "component": "interactions",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/interactions.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/interactions.txt.meta",
+      "component": "interactions",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/interactions.txt.meta",
+      "sha256": "fd65f21a071b3bef23fee5091054216bc59baa767ef263d893c7f45fb1f84c24"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/outfit.txt",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/outfit.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/outfit.txt.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/outfit.txt.meta",
+      "sha256": "f8ae1979c9a37a94cdb405e8307bcbcfb58a970c9ebc93a9f278a3a047df6a79"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/voice.txt",
+      "component": "voice",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/voice.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    {
+      "path": "Assets/Resources/SCP939Mod/voice.txt.meta",
+      "component": "voice",
+      "kind": "add",
+      "blob": "files/Assets/Resources/SCP939Mod/voice.txt.meta",
+      "sha256": "4d10dea6c77cd692f69bd04f6a0980af9ae16e396eaf27bb78c5473bd9f23150"
+    },
+    {
+      "path": "Assets/Resources/Scp939DateTable.prefab",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939DateTable.prefab",
+      "sha256": "bc312554320b00c8dfeabe632a682c035314d998118f0069acf4cf63bb7725bd"
+    },
+    {
+      "path": "Assets/Resources/Scp939DateTable.prefab.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939DateTable.prefab.meta",
+      "sha256": "b18d5a2f4cc758ebdc28b7bb556cad3d08fb9f7c177d5abe8e0d756c356512c8"
+    },
+    {
+      "path": "Assets/Resources/Scp939GiftArmMeshes.asset",
+      "component": "gifts",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939GiftArmMeshes.asset",
+      "sha256": "d43c4dad961bc4c4a5a2c8e97dd202289659853af4017758f85d606b4bbabebf"
+    },
+    {
+      "path": "Assets/Resources/Scp939GiftArmMeshes.asset.meta",
+      "component": "gifts",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939GiftArmMeshes.asset.meta",
+      "sha256": "17abac2650c499b585e0bd301e2dff88a1515155b005544318cfa992c4588356"
+    },
+    {
+      "path": "Assets/Resources/Scp939_BulbMaterial.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_BulbMaterial.mat",
+      "sha256": "edf609ca707cab54bc1f7033765ca1c2e0a5a06c72396f5deab7596e929257ab"
+    },
+    {
+      "path": "Assets/Resources/Scp939_BulbMaterial.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_BulbMaterial.mat.meta",
+      "sha256": "fa142852b8a6e729bf8c6aac3c3b0a6209d3c650df42116312772c9bc4aa9ad0"
+    },
+    {
+      "path": "Assets/Resources/Scp939_ClothMaterial.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_ClothMaterial.mat",
+      "sha256": "fed17891913b7d16c39726b23e039395db00b2c7892f782e4e566ef40ccd0347"
+    },
+    {
+      "path": "Assets/Resources/Scp939_ClothMaterial.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_ClothMaterial.mat.meta",
+      "sha256": "fcb9dadf3828b68aa9e6334d230188c6a4df036ccbb5511bfa8ef5fc91f76c0d"
+    },
+    {
+      "path": "Assets/Resources/Scp939_PetalMaterial.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_PetalMaterial.mat",
+      "sha256": "b6ff188cb7e4bd03a980961f858ebce6938df35d981900c5396462ab5a238303"
+    },
+    {
+      "path": "Assets/Resources/Scp939_PetalMaterial.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_PetalMaterial.mat.meta",
+      "sha256": "1a8ceb7bb47192918a6e6991ad002b1e450456199f0a135ae5bbb5b5dd65176f"
+    },
+    {
+      "path": "Assets/Resources/Scp939_RugMaterial.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_RugMaterial.mat",
+      "sha256": "9235b97a3908a8ae7e0493eb6da556980df887ce684a924dd42e0ff0aaf23d1b"
+    },
+    {
+      "path": "Assets/Resources/Scp939_RugMaterial.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_RugMaterial.mat.meta",
+      "sha256": "415f95e02e9566d4dd7b2872373d9bef368de94b15bb59c240b63c329809c9db"
+    },
+    {
+      "path": "Assets/Resources/Scp939_RugTrimMaterial.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_RugTrimMaterial.mat",
+      "sha256": "727d570f2386a3e30f4edee2e129308c832f44279cbc47f0f65e3a787797238c"
+    },
+    {
+      "path": "Assets/Resources/Scp939_RugTrimMaterial.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_RugTrimMaterial.mat.meta",
+      "sha256": "33a2232ac4b02aa78cb754de85781dfdc6b05fca5b659ad0cfd562be27642694"
+    },
+    {
+      "path": "Assets/Resources/Scp939_RunnerMaterial.mat",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_RunnerMaterial.mat",
+      "sha256": "3848fef3a6349ea807dfcbd20ece8520eb083a9ed6096cec2a7f1572c450129e"
+    },
+    {
+      "path": "Assets/Resources/Scp939_RunnerMaterial.mat.meta",
+      "component": "dates",
+      "kind": "add",
+      "blob": "files/Assets/Resources/Scp939_RunnerMaterial.mat.meta",
+      "sha256": "a1a35a5f82f426108d8d9eff11912c47c29cc6fdaf7c64e83cc99d823ac788d5"
+    },
+    {
+      "path": "Assets/SCP939Dress.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress.meta",
+      "sha256": "a660bad95f29adcee09a98b550be3f39e24b687c7cc32aae860984902f366e91"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Belt.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Belt.mat",
+      "sha256": "6c5e0c6e7c85acbcf5a5fd34ad96b43c15e880c854a73330eb85854b557a63c2"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Belt.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Belt.mat.meta",
+      "sha256": "0d160a88dc127b6fce3a83521301d183d306008f3ceba12b9081524525fb93eb"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Bodice.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Bodice.mat",
+      "sha256": "3ea7512b307e300ed6537e6c2c3e68336d73c4b0825aed201bc9b9a8626707ef"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Bodice.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Bodice.mat.meta",
+      "sha256": "37ab8a985096b2c6ef30aeea054dd312962259a5d061f38d77be0ebc532c206d"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Fishnet.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Fishnet.mat",
+      "sha256": "eb680d778e0246affeb70c87f0eeeb2f94d8a8f293daaa178b7476f58e379b18"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Fishnet.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Fishnet.mat.meta",
+      "sha256": "5e4b1196c2c749ff00d26e681fb5d7b8335209c42f86f3607cf301e6c933cd2c"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Skirt.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Skirt.mat",
+      "sha256": "61e67823345cc8c3ecda036a3d577b99126b9341de4866a7ffbb3ab03d8bd073"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Skirt.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Skirt.mat.meta",
+      "sha256": "0766611c05098f5f484dc054e6376cfef75f08d582b3bb7c4c305facc6e2428c"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Trim.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Trim.mat",
+      "sha256": "356bd932cdb14f0157826fe35f34364a09aa36fb98ef638c5d98aec875ceaaf8"
+    },
+    {
+      "path": "Assets/SCP939Dress/939Dress_Trim.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939Dress_Trim.mat.meta",
+      "sha256": "152ca78e6e1c8195c61ec7b188d144949e5fb8e820da1adb10162544942ffc18"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Belt.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Belt.asset",
+      "sha256": "895865f0a382e8f2bd64943d8004aec808cd4d9c18fde7958f093cd612faca64"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Belt.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Belt.asset.meta",
+      "sha256": "e84d2c61e616d89be0f41454543ca60920ceed46283bb5c5126d8c54356e18dd"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Bodice.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Bodice.asset",
+      "sha256": "952e13b1669cb41bffcd21187af2801f6d4d36624071e7c09f12c15c06ee89b2"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Bodice.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Bodice.asset.meta",
+      "sha256": "3493580ba6b7635f32fb870e29fbcc5d47fa8354e19a3ea285d33b523b3bfe66"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Bow.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Bow.asset",
+      "sha256": "778494eae3c15eb094b5fb70ee3a8f30995f78f643a5bcadfadea0342504d90e"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Bow.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Bow.asset.meta",
+      "sha256": "428aac95ef7f35ce55cd5c6ca539b613069c40fc476c175c99382f526a5f0124"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Choker.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Choker.asset",
+      "sha256": "c5aee3a96a5224e4390e4be568362ee60a7f5929c2fceaf7a302858f6b7ea01d"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Choker.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Choker.asset.meta",
+      "sha256": "8788517f94d8f3a1d40522d46520cb117fc47786087b3a832db258bafd983771"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_ChokerFrill.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_ChokerFrill.asset",
+      "sha256": "2ef9e98440ba62af529669ccf9e73122889a42e13e92d35d7e604388056dac03"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_ChokerFrill.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_ChokerFrill.asset.meta",
+      "sha256": "5768b772dad10b63ab90e7f2b64f8941cfef28b4bcd45ada208bcb49a0391a8e"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_NecklineFrill.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_NecklineFrill.asset",
+      "sha256": "668982b2011946e05310dff6775a31cfe1bc84232d2dc050aeb8b5f07e2e5511"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_NecklineFrill.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_NecklineFrill.asset.meta",
+      "sha256": "516cb1ad969251c7b1ddcb569e4c4231ce27a6b7b415ecd0c381c0a9248d9a27"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_ShoulderFrillL.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_ShoulderFrillL.asset",
+      "sha256": "9830a84274cccf3983a87f1d739d56a19e037045b54613f36c989bd542a3383e"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_ShoulderFrillL.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_ShoulderFrillL.asset.meta",
+      "sha256": "e2d40d9f3b2ad794640e0a673ecdd2e4260840c82ed129f87e8ce8c0082682cc"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_ShoulderFrillR.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_ShoulderFrillR.asset",
+      "sha256": "de21d735e60a9bf3386e6c5ecfc85990af19cb7b4a6c71f9c4bf8c450417e349"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_ShoulderFrillR.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_ShoulderFrillR.asset.meta",
+      "sha256": "5f0f3af46f6b341f16890041352f654d799cdae7d06ce74142143562e145be61"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Skirt.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Skirt.asset",
+      "sha256": "44504be7ea9054b0704e8bca059bf9450e4ba407ffbe16801c46669b7110e83f"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Skirt.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Skirt.asset.meta",
+      "sha256": "1ea4cdace0d39473b849a07247cc14bbaf1c2c0590d91bf455b502715f9803ec"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_SkirtRuffle.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_SkirtRuffle.asset",
+      "sha256": "ca2093c335ee9781a56f71579ac155d60cf03fc4827da985aaabed8586e837fe"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_SkirtRuffle.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_SkirtRuffle.asset.meta",
+      "sha256": "edb06e29c497f205496d6270c0775e1a5ff46aafacd1f5d48d48a2d253cc0b76"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Stockings.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Stockings.asset",
+      "sha256": "76964c83afc9dbc8d3a3f58fd6e53b8a7b803244fc6090781570921850f8d72e"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_Stockings.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_Stockings.asset.meta",
+      "sha256": "58baf8f21f44db36a669a74d3ff94de2231d945967f918ae57a9f05ffc1301fe"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_StrapFrillL.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_StrapFrillL.asset",
+      "sha256": "11e302a28ff2f8a061812a682f16fb7d4be89dfa978b9db75527d719d60ae2d9"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_StrapFrillL.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_StrapFrillL.asset.meta",
+      "sha256": "017dc698510f33c780b04644555c8b34b2210151d1727169a4a469c48ec6d51c"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_StrapFrillR.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_StrapFrillR.asset",
+      "sha256": "18aa69468bc4afc5ab3bebbf86301ac531f4d315b7f91f20d54c5c84fc7e2bb8"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_StrapFrillR.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_StrapFrillR.asset.meta",
+      "sha256": "ad8cd18ae3e3dfb96f8dffc29e5037e4955ec516497f78560b2e670a2a3ccd2d"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_WaistFrill.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_WaistFrill.asset",
+      "sha256": "d1f63c435b6035c812ea61b9ed74bec64e37fcc95b3dff1437458066726902ad"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_WaistFrill.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_WaistFrill.asset.meta",
+      "sha256": "c74363c491e6928aff1cdd65989e4b6d7771d3ce3df613fc8c17cc2ca4ff7181"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_fishnet.png",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_fishnet.png",
+      "sha256": "de92cd06c40e293f5c6dceafc0fe2dfc09f78371088b03594813510811528bf9"
+    },
+    {
+      "path": "Assets/SCP939Dress/939_fishnet.png.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/SCP939Dress/939_fishnet.png.meta",
+      "sha256": "0a32aaec6b2a7c1662c4b03715b6a0c7ec6d9bdaa2f0017f2c6e1903c6b34edc"
+    },
+    {
+      "path": "Assets/Scp939Outfit.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit.meta",
+      "sha256": "d6ed4ad4c1118bde02ef873f6e0c99d34615d21851903bb792dbc02620c66ba7"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender.meta",
+      "sha256": "e4621ffdb98f32112bb2e6959c009e76afa1253c505bb06e7bcedb6a32e684a2"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Blender_Skirt.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Blender_Skirt.mat",
+      "sha256": "71213f7746430138fd2b06e7a34f4e6b6257ae8a97579662152e8584e49645ac"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Blender_Skirt.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Blender_Skirt.mat.meta",
+      "sha256": "eff840d4ddad3faac41c208f6a9296c1704500fb99f84ed087cb7c4ad388eca0"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Blender_Stockings.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Blender_Stockings.mat",
+      "sha256": "d2f460d79af12ff07b972476f0c0d5dd745daf15a20b225214bffedef9e60558"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Blender_Stockings.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Blender_Stockings.mat.meta",
+      "sha256": "1c41c0824b0c143b0dcf76028fcb662471df8a9ffa49dca7199a9ba55c9acc4f"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Top_Corset.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Top_Corset.mat",
+      "sha256": "5f583432f0ddcdabcd20552319d81b86a0f6f90841e75773245aebcb5a0dd7f1"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Top_Corset.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Top_Corset.mat.meta",
+      "sha256": "e08a2a50ec373f2812804fc97c4114706a36507827f786a38b32221e89af0d89"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Top_Lace.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Top_Lace.mat",
+      "sha256": "42962ffcb6d5e377331fcb2f35dec514c999c2b0ed39e09e4075eb9f14d10391"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Top_Lace.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Top_Lace.mat.meta",
+      "sha256": "5e62ebe303d4fb097755dfd845a75b56732e06d2540a449ef420bfb65d50e44c"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Top_Satin.mat",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Top_Satin.mat",
+      "sha256": "32ba0495e16a791c1e8c8052e6f9a9e6994b8578e75176584f5de01f34d3390f"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/939_Top_Satin.mat.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/939_Top_Satin.mat.meta",
+      "sha256": "ee5a7f4dea84670016b5e4ef0a39cb717320db6e41677f5be92f80d8aa874df7"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/SKIRT_939_Albedo.png",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/SKIRT_939_Albedo.png",
+      "sha256": "db1e41d4f7fe8b58e4acd1086f0d40a95ecb5924299c612bd881ed734c676035"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/SKIRT_939_Albedo.png.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/SKIRT_939_Albedo.png.meta",
+      "sha256": "d9f7739351ff06ee5aeb61582ff15219e184b535f29e4cec5c406c227bd7d6be"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/SKIRT_GAME.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/SKIRT_GAME.asset",
+      "sha256": "6d6e0de2bd41c5f4b513b7ccfc41453ceac3dc08a1e0279da73716f51f52cf92"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/SKIRT_GAME.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/SKIRT_GAME.asset.meta",
+      "sha256": "a3963f2be882d92ea48125676561c8929632a866a3ddcee0c808fad5996b3eee"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/SM_Stockings.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/SM_Stockings.asset",
+      "sha256": "364f75e68fda9b9bda476beb1f2457780e56378fcd6618e747c666295ab24a31"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/SM_Stockings.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/SM_Stockings.asset.meta",
+      "sha256": "29016183bace4d17c75a42748cd0e65440182da71a8b67c0a301cdc137f17443"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/STOCKINGS_939_Albedo.png",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/STOCKINGS_939_Albedo.png",
+      "sha256": "0e19bec7b2a012a73a7b4a852d34d266eb214f46e1c4c00da7d68740a6767a4f"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/STOCKINGS_939_Albedo.png.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/STOCKINGS_939_Albedo.png.meta",
+      "sha256": "4495bdba00c3eff8722ddc05bfe1a4b388286bd34c1aeafd50bdea111544eb88"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Bow.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Bow.asset",
+      "sha256": "de37111ea1805dcd242a143a0643ecfbc823a95a6df4dc3706ae2f6ffc0c9645"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Bow.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Bow.asset.meta",
+      "sha256": "a86cf4cae4f7a6ed2cbed196cb22ffbe1213d5fc1da31f30345814fe790a4472"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Corset.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Corset.asset",
+      "sha256": "16b6edd194e681208d70cb9b6f6b2a3b590c9b86dbdc65730c8c4f54d31ea544"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Corset.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Corset.asset.meta",
+      "sha256": "e0fe1db6c88005502fe8e52050169d903bfc1d6ac7a190697eeecd7bdf1dab3e"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Corset_Albedo.png",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Corset_Albedo.png",
+      "sha256": "52fb5e99dd05988beb50f8fb626d29199bf3803cbdfd92adf4c7f6fcac52a237"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Corset_Albedo.png.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Corset_Albedo.png.meta",
+      "sha256": "4d8cbd57f2223b6afac18981ab77a6b8b1ee569057ca8759a8fd2471db77bcb1"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Corset_Normal.png",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Corset_Normal.png",
+      "sha256": "0ad4048fdc4af983433186597fea1a11c5ce58f78c4bdbe8f5e4b0f336edb361"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Corset_Normal.png.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Corset_Normal.png.meta",
+      "sha256": "477f17b2eb73206b17369acafc2c29b3ae4739be95f91850af7292f955df7279"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Jabot.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Jabot.asset",
+      "sha256": "7af5e99c5e9250666cf8dac6fa51b5b75495c073d22e9b43a3f9ff4947ddf9f7"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Jabot.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Jabot.asset.meta",
+      "sha256": "deeaf7b9eb2e4976a50ef2b791961f597c6023a2975bbcaf4388f944067fe7b1"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_LaceTrim.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_LaceTrim.asset",
+      "sha256": "7064b8149f1a40d23ea1ab2d42ab302f5bb4f52ed6e42255c436b2cd02557be6"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_LaceTrim.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_LaceTrim.asset.meta",
+      "sha256": "d679ba0648a7932b42d0fb194919600788bc82fd4c5ceca4f81216ec6c65155c"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Lace_Albedo.png",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Lace_Albedo.png",
+      "sha256": "0842aa5d20962840c4521659cf69cefb80bc4b3b93491f318907560ed8ff668f"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Lace_Albedo.png.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Lace_Albedo.png.meta",
+      "sha256": "459b2d9e3ce5830f5044c10bd5442858ee9ce3f958e8a91a7ffd33b4f616bf13"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Sleeves.asset",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Sleeves.asset",
+      "sha256": "7669b9647c3eca9fa80a3ae75e59edc2c83c3d529f3ed7394981086ec358f033"
+    },
+    {
+      "path": "Assets/Scp939Outfit/Blender/TOP_Sleeves.asset.meta",
+      "component": "outfit",
+      "kind": "add",
+      "blob": "files/Assets/Scp939Outfit/Blender/TOP_Sleeves.asset.meta",
+      "sha256": "ca8e1e4b564d3b64f99a2825a1658a9e302791dc9a7c19fdccbbb3fde0077f59"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/CommandSystem/Commands/RemoteAdmin/Scp939DateCommand.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/CommandSystem/Commands/RemoteAdmin/Scp939DateCommand.cs",
+      "sha256": "dcde3238f066bca89af19dc9bfd61b4f9e38c4f85297e6c55dd826026a149e4c"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/CommandSystem/Commands/RemoteAdmin/Scp939DateCommand.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/CommandSystem/Commands/RemoteAdmin/Scp939DateCommand.cs.meta",
+      "sha256": "85ac06171d7042edf568b98c2aeaa511d51e0d4205752b4938781db3b91d8f32"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/CommandSystem/RemoteAdminCommandHandler.cs",
+      "component": "core",
+      "kind": "patch",
+      "baseNormalizedSha256": "0853062e658b0802b740199ae5e840e88b76d1e38521e635657d98dc953a2c1a",
+      "patches": [
+        {
+          "before": "            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.ClearEffectsCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.ContactCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.DestroyToyCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.DisarmCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.DisplayNameCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.EffectCommand());\n            RegisterCommand(global::CommandSystem.Commands.RemoteAdmin.ElevatorCommand.Create());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.ExternalLookupCommand());\n",
+          "after": "            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.ClearEffectsCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.ContactCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.DestroyToyCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.DisarmCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.Scp939DateCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.DisplayNameCommand());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.EffectCommand());\n            RegisterCommand(global::CommandSystem.Commands.RemoteAdmin.ElevatorCommand.Create());\n            RegisterCommand(new global::CommandSystem.Commands.RemoteAdmin.ExternalLookupCommand());\n"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ActionMenu.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ActionMenu.cs",
+      "sha256": "ab1aeb30b6ce0cee0e000d9b3352434b4b4eaec0fef211756050d13a2ac1c43a"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ActionMenu.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ActionMenu.cs.meta",
+      "sha256": "89c0efdd4f1305d44e7d2828dc930cd50f6b8d09e96e8701df1fc0912459c304"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Affection.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Affection.cs",
+      "sha256": "0b33c1d004a81e5c6f94127199b3c7f0926bda47a36b70e4b9a88bfe5974bad8"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Affection.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Affection.cs.meta",
+      "sha256": "0d1bef7eb57796e067629cdaf2e097aeaefc82ecd03729fc26012c4618e22542"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939CandleFlicker.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939CandleFlicker.cs",
+      "sha256": "8a6372299c5812716583fe61b82562e121aa04db94ee052d75da213721283958"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939CandleFlicker.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939CandleFlicker.cs.meta",
+      "sha256": "db520352edd3d80156599cc83bf6f817ccfab6237e4b6f074bd36de15a7a4db1"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Companion.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Companion.cs",
+      "sha256": "c1d6c20329604af22b046512a7e3f65b8038ef58e4969771f95355b3694cb9d7"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Companion.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Companion.cs.meta",
+      "sha256": "947506460f5da5d41b8a07984836d8f165cd06741153cb28e6848dcbe8539078"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939DateSpot.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939DateSpot.cs",
+      "sha256": "e67bd6adccf4d13483658a9c2f33f51c335650b6b62dcb038558a14cda569875"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939DateSpot.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939DateSpot.cs.meta",
+      "sha256": "9a8f57dc7c189563d3e64c1e88f018d01bac8dc876309b9fcbd7e76b1f2052a7"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939FirstPersonHand.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939FirstPersonHand.cs",
+      "sha256": "bb2a10c743e026448d70844a4cc9b31972c600388df166a1bef41720e0da50a2"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939FirstPersonHand.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939FirstPersonHand.cs.meta",
+      "sha256": "0cc0242e02e86fcac3957ed7ce03196136cc2ff3b5310cc72d2622b9b616777d"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftArm.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftArm.cs",
+      "sha256": "15491f458d0f986fe7ba80e846cc9de243b546956d39fdaa1336efb46d2e4d1d"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftArm.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftArm.cs.meta",
+      "sha256": "349fb56388747852a598e5e245685073e5f14325bbcca0f1cb54b48881c60587"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftArmMeshes.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftArmMeshes.cs",
+      "sha256": "4bc0acc65ab326b56e2e959c75a2bbf1263d6f9faf41807e0ffa08df190b9701"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftArmMeshes.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftArmMeshes.cs.meta",
+      "sha256": "46f1b866a4352a65c6c8821c0da23fceda703664301d88ff836778fe0af92a25"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftPresentation.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftPresentation.cs",
+      "sha256": "ccf6c502b28a2e6774ff0e91b0668dc723af2d18851aaf0c36ed1e9dcf87989b"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftPresentation.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftPresentation.cs.meta",
+      "sha256": "cb76632edea6dff77599490462d67097649550b0357e702f68c591f251c63d7d"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftTransfer.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftTransfer.cs",
+      "sha256": "ccced41ee3d6ca39cf7790e573ae49356ed2c3a400aa13277ae720c2d5a89458"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftTransfer.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939GiftTransfer.cs.meta",
+      "sha256": "04213d70398ee23f12b5f00607e6c6add6719853146fe62e785f7f08f50521a3"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Gifts.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Gifts.cs",
+      "sha256": "9e8e5e3bf18f2bf8d521ba5b48ad4d1435412558c5d42b08dce83ecde2f4f13d"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Gifts.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Gifts.cs.meta",
+      "sha256": "449470363a048f2589d37eae58185f973a8dc1e4d11ef2b3f4e951bcc24984f5"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939InteractionPoser.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939InteractionPoser.cs",
+      "sha256": "59a46831edf6b2ddbbae44c7a8e509781f7d0797b73fb8c33f523acc2dc8d72b"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939InteractionPoser.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939InteractionPoser.cs.meta",
+      "sha256": "0399868c5e997a056ef0a9f8302f0ff7100fe86f77ca3a38de4751c238c1376b"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Interactions.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Interactions.cs",
+      "sha256": "f0989849aaa848343f51fb6ffacafb35bd6e12fc542aff67ddd8157ebbfe56a4"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Interactions.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Interactions.cs.meta",
+      "sha256": "1b2951fadafbc789b242036a051c93425a63bf7161a736ade4beca77edf6be94"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Lines.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Lines.cs",
+      "sha256": "2565e51544e25f75ed2fb593194c97e540724811c91063e9c669e49aea899a1e"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Lines.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Lines.cs.meta",
+      "sha256": "78a53eccedca9285b1ea7f9a02c284d4dba06dbf58fbdd0c538e1cb9b2c880e8"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ModCompatibility.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ModCompatibility.cs",
+      "sha256": "457b9d9971a18b643f074351567d9098cbe6584bc67329f24aa809a2f9f78d42"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ModCompatibility.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ModCompatibility.cs.meta",
+      "sha256": "d03214630d28ce7dbb7b590c2b1feaf40cdce5211f29e8931a6f941236944f6d"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ModSettings.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ModSettings.cs",
+      "sha256": "c34b9c21c2d2332a62bb2b823d66033238c5762ac79115dc885f3fa3a296d531"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ModSettings.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ModSettings.cs.meta",
+      "sha256": "db1dc03ea65da67ec9ab48c3db7d049e3b8ef751a784fc09a6913dd119b278c3"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Rage.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Rage.cs",
+      "sha256": "40628f6376ac61927e653867cb47aa9d3b8777321aa6ea8ee5e530975aedc841"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Rage.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Rage.cs.meta",
+      "sha256": "801c9dd222e125eb1cb5a582c88a3c2ed9cffad7d7d5788d2825691eeba41adb"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ScreenFade.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ScreenFade.cs",
+      "sha256": "b5a15c9e285075793be6950e18c38070baea37be0a82a5f6012c53b77b314898"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ScreenFade.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ScreenFade.cs.meta",
+      "sha256": "52ae9713f2cc976716e7f610c10373b006bbdb41460a9fef914dea4d3334a829"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Sfx.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Sfx.cs",
+      "sha256": "8403e01b1835c7136f6b4e3177c77a6ba9a5b5238880de6e615ed3b41a3acb86"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Sfx.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Sfx.cs.meta",
+      "sha256": "43d274be7eac91aca4075eb956321d8488f14fd965c3db0dbcf6212d6b86e4ba"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Speech.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Speech.cs",
+      "sha256": "f75ce010ae0e3f117b38c0d807ab075b95aefafef729e6b980e0d9ca2c3c76f9"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Speech.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Speech.cs.meta",
+      "sha256": "f4e3a00fbd9b30711d81866cf3b30148379853f9f8dbc65475ed6a9db4cd05ca"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Voice.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Voice.cs",
+      "sha256": "3a59b6906c4bde978b05ddbf9b37380db6033df8d04b6a4a9a1262a1148a8505"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Voice.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Voice.cs.meta",
+      "sha256": "719d617e698e3781197aa3cb6f34958b7bf1d3184c158847fc6a0e040022bd15"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/RoleAssign/ScpSpawnPreferences.cs",
+      "component": "core",
+      "kind": "patch",
+      "baseNormalizedSha256": "b83a6957764b1709037ba8c46468ef4c68dbe11e5b93b8867e63b9deaeaf11ed",
+      "patches": [
+        {
+          "before": "                if (!autoSetup) return;\n\n                foreach (KeyValuePair<RoleTypeId, PlayerRoleBase> allRole in PlayerRoleLoader.AllRoles)\n                {\n                    if (allRole.Value is ISpawnableScp)\n                    {\n                        Preferences[allRole.Key] = GetPreference(allRole.Key);\n                    }\n                }\n",
+          "after": "                if (!autoSetup) return;\n\n                foreach (KeyValuePair<RoleTypeId, PlayerRoleBase> allRole in PlayerRoleLoader.AllRoles)\n                {\n                    if (allRole.Value is ISpawnableScp && global::ScpCeMods.ModRoles.CanSpawnNaturally(allRole.Key))\n                    {\n                        Preferences[allRole.Key] = GetPreference(allRole.Key);\n                    }\n                }\n"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/RoleAssign/ScpSpawner.cs",
+      "component": "core",
+      "kind": "patch",
+      "baseNormalizedSha256": "d09cfd43d3da52d720557aeee2ae5bdc4d4fd3cd45cf7f81e92a5cc87ab89597",
+      "patches": [
+        {
+          "before": "                }\n                List<PlayerRoleBase> list = new List<PlayerRoleBase>();\n                foreach (KeyValuePair<RoleTypeId, PlayerRoleBase> allRole in PlayerRoleLoader.AllRoles)\n                {\n                    if (allRole.Value is ISpawnableScp)\n                    {\n                        list.Add(allRole.Value);\n                    }\n                }\n",
+          "after": "                }\n                List<PlayerRoleBase> list = new List<PlayerRoleBase>();\n                foreach (KeyValuePair<RoleTypeId, PlayerRoleBase> allRole in PlayerRoleLoader.AllRoles)\n                {\n                    if (allRole.Value is ISpawnableScp && global::ScpCeMods.ModRoles.CanSpawnNaturally(allRole.Key))\n                    {\n                        list.Add(allRole.Value);\n                    }\n                }\n"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/RoleTranslations.cs",
+      "component": "core",
+      "kind": "patch",
+      "baseNormalizedSha256": "72fadfbb3b3fd239d109fec2c68a99ac4fa0253aff0339d5934ec2afe345b953",
+      "patches": [
+        {
+          "before": "        public const string RoleNamesFile = \"Class_Names\";\n\n        public static string GetRoleName(global::PlayerRoles.RoleTypeId rt)\n        {\n            if (!TranslatedNames.TryGetValue(rt, out var value))\n            {\n                return rt.ToString();\n            }\n",
+          "after": "        public const string RoleNamesFile = \"Class_Names\";\n\n        public static string GetRoleName(global::PlayerRoles.RoleTypeId rt)\n        {\n            if ((int)rt == 22) rt = (RoleTypeId)16;\n            if ((int)rt == 41 || (int)rt == 42) return \"SCP-3114\";\n            if (!TranslatedNames.TryGetValue(rt, out var value))\n            {\n                return rt.ToString();\n            }\n"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/RoleTypeId.cs",
+      "component": "core",
+      "kind": "patch",
+      "baseNormalizedSha256": "96aa78e4e4aa9465052f3f64b3870c9cec29ae50aa1b724c07d96b490f3e5a0a",
+      "patches": [
+        {
+          "before": "\t\tCustomRole = 17,\n\t\tChaosRifleman = 18,\n\t\tChaosRepressor = 19,\n\t\tChaosMarauder = 20,\n\t\tOverwatch = 21\n\t}\n}\n",
+          "after": "\t\tCustomRole = 17,\n\t\tChaosRifleman = 18,\n\t\tChaosRepressor = 19,\n\t\tChaosMarauder = 20,\n\t\tScp939Dressed = 22,\n\t\tOverwatch = 21\n\t}\n}\n"
+        }
+      ]
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/ScpCeMods.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/ScpCeMods.meta",
+      "sha256": "cb745abc7fd22058eb0db581c81d1b71062a198ac9ab9ef7d06009dd0411169a"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/ScpCeMods/ModRoles.cs",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/ScpCeMods/ModRoles.cs",
+      "sha256": "7869a795368885d959a48228a82badd3df100da446c6449e2963adefcad4074a"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/ScpCeMods/ModRoles.cs.meta",
+      "component": "core",
+      "kind": "add",
+      "blob": "files/Assets/Scripts/Assembly-CSharp/ScpCeMods/ModRoles.cs.meta",
+      "sha256": "149a4c11cd53440b5e1cf9086496c8c6b12fc6605bcb20ab8e3952c04606dbb7"
+    },
+    {
+      "path": "Assets/Scripts/TMPro/CharsInTTFWindow.cs",
+      "component": "core",
+      "kind": "patch",
+      "baseNormalizedSha256": "3daca8b11b50218d22f6fac7bd3408908a003237bc1294d0add86571bc627d42",
+      "patches": [
+        {
+          "before": "using System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine;\nusing UnityEditor;\n",
+          "after": "#if UNITY_EDITOR\nusing System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine;\nusing UnityEditor;\n"
+        },
+        {
+          "before": "            return v_charsRange;\n        }\n        #endregion\n    }\n}",
+          "after": "            return v_charsRange;\n        }\n        #endregion\n    }\n}\n#endif\n"
+        }
+      ]
+    },
+    {
+      "path": "Translations/ru/Class_Descriptions.txt",
+      "component": "core",
+      "kind": "rows",
+      "baseNormalizedSha256": "d2fce75c2507c7212bb7af077e37436eeaa62ef08606c9be1b63e65ee7110fd8",
+      "rows": [
+        {
+          "index": 22,
+          "value": ""
+        }
+      ]
+    },
+    {
+      "path": "Translations/ru/Class_Names.txt",
+      "component": "core",
+      "kind": "rows",
+      "baseNormalizedSha256": "e76bbf150a2498b071198cd5960143625ee338bf37293bcb3c71f6e12595498d",
+      "rows": [
+        {
+          "index": 22,
+          "value": "SCP-939 (в одежде)"
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "path": "Assets/AnimationClip/939_amnesticCloud_charge.anim",
+      "guid": "d37ec5763354de94ead2d293fed1afb6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_amnesticCloud_release.anim",
+      "guid": "c6c0c46ebc553a4498c932ebfe17c835",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_crouchHead.anim",
+      "guid": "ef72e11cf4c7a994ebf2975ab42bb120",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_crouchHeadMirrored.anim",
+      "guid": "933e100892de42acbed76016d4ef69d7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_crouched.anim",
+      "guid": "fc37a74998c51b04ab8ccbf55a9c3e32",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_death.anim",
+      "guid": "ce442c4da6acef247aa4cd70a2faa39b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_hit_01.anim",
+      "guid": "c00f035b6d4c24443ae726d01b40972a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_hit_02.anim",
+      "guid": "87b4f7bbfc01f6944a9bc67782cc32a4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_hit_03.anim",
+      "guid": "ea6fec9a4f044614f9c212d4e4e86950",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_idle.anim",
+      "guid": "aa2e78e95c2bc6541a14d8f9e4be7753",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_idleToCrouched.anim",
+      "guid": "a99bbd5fc807a6b4986b6e4d2a9a4264",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_jumpFalling.anim",
+      "guid": "33ef0ac1d2b48a142a66bceab7f84e69",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_jumpStart.anim",
+      "guid": "38b23d9fd6999fc4ab57cc51c196664f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_land.anim",
+      "guid": "a557ceb2115f0784a80a8e3728142e2a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_landHarsh.anim",
+      "guid": "59f0f739881efd6438f6b5cbb1ed5119",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_lunge.anim",
+      "guid": "e0f68f0204e0bfa4b828706c55af0487",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_lungeAir.anim",
+      "guid": "4a4d539a28255e742b9af528040f6685",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_lungeHit.anim",
+      "guid": "2d18933c237558148b310265702d4dd1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_lungeLand.anim",
+      "guid": "8ff3990b249525946b43b399baa7e7a6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_pose.anim",
+      "guid": "f4bbd79407b607f4c89070cb32e734cb",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_amnesticCloud_release.anim",
+      "guid": "3448fff13a3c33d9658b4a7579e5a5ad",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_jumpFalling.anim",
+      "guid": "60d274d9365334339203fbae23c27b28",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_land.anim",
+      "guid": "42c174a2e6f848b01d75a38b055350c3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_runBackwards-side.anim",
+      "guid": "d7514f914759bc57c09bddcfe3c37aed",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_runBackwards.anim",
+      "guid": "f35478749b3aa9e2d5257fe9bb577aa2",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_runForward-Side.anim",
+      "guid": "1b093b9491a648aa9fd46d4542d74392",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_runForward.anim",
+      "guid": "7716e2cbdd2712653a7f3c82cb83e788",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_side.anim",
+      "guid": "e5ddf833cc6c2a3c82efef31efe1d109",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_sprint-side.anim",
+      "guid": "420073702d22d82107e1df49dfa87c97",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_ref_sprint.anim",
+      "guid": "5e1e5d410c1f0ff7c237d89476cbf33a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_runBackwards-side.anim",
+      "guid": "8f8edabe166567d4695fee165cd25933",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_runBackwards.anim",
+      "guid": "47ff6884513124444855bc0a200f8193",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_runForward-Side.anim",
+      "guid": "162283c294212db42ab650e7deb903d3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_runForward.anim",
+      "guid": "f9ae18ec63ef44047b3af264e38f61a1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_side.anim",
+      "guid": "95142f4eb5e7eb244812bc121c2aeed6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_slash.anim",
+      "guid": "a86e385b76f0070479db81004cd5b776",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_slash2.anim",
+      "guid": "2684ad3ca7333f947b8599a65572aa54",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_sprint-side.anim",
+      "guid": "91064d13027201d45ba7c809d153a3d4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/939_sprint.anim",
+      "guid": "2392887c95cb98647809818e775d2449",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/focus_enter.anim",
+      "guid": "6f06525775cbb6d4d93c054a04d609cc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/focus_exit.anim",
+      "guid": "944a809935fcd59498ddc1293bbc6d71",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/gas_chargeup.anim",
+      "guid": "b50dfe03924cad742808c2c71e08caf4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/gas_release.anim",
+      "guid": "d6fb87becce22b548b80f50c412084d1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/idle_2.anim",
+      "guid": "917b61e8a0ad6ca4f8c414776142729e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/jump_end.anim",
+      "guid": "f5d7403c61bf51a4084f05d7db91f807",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/jump_loop.anim",
+      "guid": "accf6fc6b6b8c174f85b467f2fb4b2db",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/jump_start.anim",
+      "guid": "d3b639847357b7341bf9345dbc2bac78",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/lunge_end.anim",
+      "guid": "5709aadc002e8eb448dfb83d2188646c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/lunge_loop.anim",
+      "guid": "d59983c881ca0f34883605b9a7c3e182",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/lunge_miss.anim",
+      "guid": "7400ba015255e1e42b2451350245ab75",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/lunge_start.anim",
+      "guid": "0c303ed09eb835041bf6588537327a21",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/slash01.anim",
+      "guid": "465d0eddc2c52894e934ad5a652b6d77",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/slash02.anim",
+      "guid": "17635f72f8e4cb447b3c6f0c93772a5f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/slash03.anim",
+      "guid": "dfa08791d6ae08549a9e4b6d522fd57a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/slash04.anim",
+      "guid": "e2b6f1bbedd48f048a8efbee9945ac63",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/sprint.anim",
+      "guid": "094529e1a9747c84f8f4e36e88be8002",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimationClip/walk_0.anim",
+      "guid": "344c739eb21ec384ca2b61235f47cecf",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimatorController/SCP-939 Animator.controller",
+      "guid": "2731eb29db903624d840d2ba79ab3d8e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimatorController/SCP-939 FPS.controller",
+      "guid": "2dcc12287bfbb3f439f713955ec28c9d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AnimatorController/SCP-939 Ragdoll.controller",
+      "guid": "b5b594d3e1dbc8049b1fde27132572fd",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/173_Hume_Shield_Break_Final.ogg",
+      "guid": "4d791779978a7654da38b74c3d3b17d9",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/173_Neck_Snap.004.ogg",
+      "guid": "6918489be98004f47a6b85f1a51cddb8",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/173_Teleport_Final.ogg",
+      "guid": "325f4d3f16f3b7942ad33527bcbdad5e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/207_Use.ogg",
+      "guid": "3680d88f34d56104ebc9be7f2222f159",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Death2.ogg",
+      "guid": "91455583b98ee7944a81a2cc7717a828",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Idle Breathing 2.ogg",
+      "guid": "a299e740fb0c1b349b9fb7fb4ab2a23e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Idle Breathing.ogg",
+      "guid": "f0ed99dfb32a2d74da3ea229d50d1191",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Pain 1.ogg",
+      "guid": "c2e5f4318cd76cd409fdc45631be3f47",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Pain 2.ogg",
+      "guid": "5c46b270e6b961d4291738384fa8d26d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Pain 4.ogg",
+      "guid": "9efee39691c5d2742b7d0f57a8f3b41d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Running.ogg",
+      "guid": "6ac7b9e8f1a7f5540b610069f883db3d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Running2.ogg",
+      "guid": "600f727ee25a3304bad03d39035b730f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Slash Hit 1.ogg",
+      "guid": "8e9fef6954d95df48a2bd2c118c6609c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Slash Hit 2.ogg",
+      "guid": "a6e4d82b69e754e47bae3a3a65d0ff36",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Slash Hit 3.ogg",
+      "guid": "6f8c85bb120c8544a93cfcd2f74a1f67",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Slash.ogg",
+      "guid": "d7a7099d1b54e594a93d6570450ea10e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 Swing 1.ogg",
+      "guid": "0e003b7167633324480f5026fc9273ad",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 bite beta.ogg",
+      "guid": "3bd475f7704246d4988d81210d920974",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939 claw beta.ogg",
+      "guid": "a80d4c268d59f2c44995bad52e0c1422",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939Footstep1.ogg",
+      "guid": "3d81b6d0bf70b0848b42ff6c888b8464",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939Footstep2.ogg",
+      "guid": "eac876ead743eb141915c934eb9ab729",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939Footstep3.ogg",
+      "guid": "45078b0162d9a2f4eaa071ddab870afb",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939Footstep4.ogg",
+      "guid": "4597c955176c9c2478dbfa76537ce554",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/939Footstep5.ogg",
+      "guid": "a0e24229987b7b54798772b96a14fc2f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/AK Firing.ogg",
+      "guid": "ebcaeb841ae0da848b2ad61d37ec17ad",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/AmnesticCloud.ogg",
+      "guid": "c6091bdd08eaddc459d5b6adeadaa231",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/COM15 Equip.ogg",
+      "guid": "d8834e68360c14c4fb94767048c92833",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/CloudGrowlDeploy.ogg",
+      "guid": "4373d4c263aeba34f8e8d9920f09791c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/CrossvecFire.ogg",
+      "guid": "082da6b50cc9d9147a221951da9f6959",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/E11SR Firing.ogg",
+      "guid": "f79872107669fcb49bed2d626a9188da",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/FSP9 Firing.ogg",
+      "guid": "8e5b14277bb8b1f4c8b1fc1030e2a77d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Focus Transition.ogg",
+      "guid": "b39f8162bb046b84eb4b6cd75e956262",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Focus.ogg",
+      "guid": "0b2aee98753ec834495b7a6fed07dacc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/FocusNoBreathing.ogg",
+      "guid": "694319033eefd004db5c656b48f67fb0",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Lunge Hit 1.ogg",
+      "guid": "e9585c54bc8bbd748b63785c7ca19a70",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Lunge Hit 2.ogg",
+      "guid": "552d1ce3463044a41a038b0c11321c8a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Lunge Hit 3.ogg",
+      "guid": "00d424745416c854688aa1be8951e2e7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Lunge Landing Successful.ogg",
+      "guid": "96d55cb14a0ba0444ad8bd72be120365",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Lunge Launch.ogg",
+      "guid": "2d9037a1b3f00334e91217ea15f1eb5e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Medkit Use.ogg",
+      "guid": "507624c424ffdc84894619c7c3878578",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Painkillers_Use.ogg",
+      "guid": "18a40cedcb1530c4f9ec77fbd5f300ea",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Shotgun Firing 1st.ogg",
+      "guid": "c600aeb3d32ad074daa16751857fb644",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Shotgun Firing 2nd.ogg",
+      "guid": "0afcd7a516cbc3b44a7f5e7079822b8e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Shotgun PumpIn.ogg",
+      "guid": "998211142577d6447bba4def0c0b717e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Shotgun PumpOut.ogg",
+      "guid": "0d69b990f77d503498149af2a0611f17",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Step1.ogg",
+      "guid": "561f22a93aff9b04986970b7ceb523e7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Step2.ogg",
+      "guid": "6d9e9dff7b1d6e844aef6e3a9e0b3d70",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Step3.ogg",
+      "guid": "73f0b0e8f89d41c49b6820c94ce8875a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Step4.ogg",
+      "guid": "f107be2a0c48a044eb1919ac35ceb108",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Step5.ogg",
+      "guid": "f7c508cd2a92149429fd1dc1a5d2e788",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Step6.ogg",
+      "guid": "6cda044b98e8c1e4d9b1d41c447594da",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Step7.ogg",
+      "guid": "9f2158ab361ee2b418ea3ce08a809e2b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/Step8.ogg",
+      "guid": "6d0adc1cdd924674b8af160277617ecd",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMetal1.ogg",
+      "guid": "c5db471a984a7df4f8c39822210f97a4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMetal2.ogg",
+      "guid": "932d32f47740352409552461841d8ace",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMetal3.ogg",
+      "guid": "28d899b78fa014847801d78c87ad0634",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMetal4.ogg",
+      "guid": "a87143c984352844ca33cd5399513596",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMetal5.ogg",
+      "guid": "ed01b77624ff60c4fbea4d74fb8a8ea7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMetal6.ogg",
+      "guid": "0b2971c93fb983441930e749e7560be9",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMetal7.ogg",
+      "guid": "9b1667ab1844a12468ce8a98df364b60",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMetal8.ogg",
+      "guid": "e0e5c8b0bd8d5374aba5055d61e9bd85",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMisc01.ogg",
+      "guid": "a8fb55bde5fb30447a4c736e38869809",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMisc02.ogg",
+      "guid": "11cec4c594b563642b23924b63e27794",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMisc03.ogg",
+      "guid": "4faee5d940dc5d4449fcc0ddf4818927",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepMisc04.ogg",
+      "guid": "9e43316011b77244bb17e547f823d99d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepPD1.ogg",
+      "guid": "b8ed1e32a7449bc4088a088c35df2304",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepPD2.ogg",
+      "guid": "15859ff2f84fef545b394d41db2f53db",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/StepPD3.ogg",
+      "guid": "17de23dd7fd0a5243b392146b2b3f3dd",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/falldamage.ogg",
+      "guid": "73af416f5b3536341a5f1805777ce61b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/mk2-001.ogg",
+      "guid": "a7fb093e003074e4eb392f53accfc9f7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/mk2-002.ogg",
+      "guid": "000aec2ebd9f1f544a6cfe7c6ab87ba9",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioClip/mk2.ogg",
+      "guid": "fcbd9dad1d087074d987e0c04e9f90a5",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/AudioMixerController/MainMixer.mixer",
+      "guid": "77cd46782d73465448ebe3c760f5b414",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Avatar/939_RIGAvatar.asset",
+      "guid": "e708d7075bf7e8c4ca0ac9dd687bd8aa",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/GameObject/Amnestic Cloud Hazard.prefab",
+      "guid": "3fcf95252f749ef4aad1081a9ee92bae",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/GameObject/Lunge Death Animation.prefab",
+      "guid": "a79a94c75f37cfc4f9f81a1b2e1c0240",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/GameObject/SCP-939 F1 Menu Variant.prefab",
+      "guid": "27b569381909f5d4aa22206fe9c530d7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/GameObject/SCP-939 HUD.prefab",
+      "guid": "113a7f5139ef3ac469d8392d9ccf1d50",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/GameObject/SCP-939 Ripple.prefab",
+      "guid": "94d1414db5179f144b502f5b4c0ec6fc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/GameObject/SCP-939 Voice Confirmation.prefab",
+      "guid": "0f5deccd6e19ba34386b79f382cec17c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/GameObject/SCP-939_Ragdoll.prefab",
+      "guid": "fc04238f6045cd445ba99251b3a271c1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/939 Mimic Point Mat.mat",
+      "guid": "da6b24b5e5398b14baaca79379b05198",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/939_Fps_mat.mat",
+      "guid": "891ae2b09a5e453468e5bb9b55a7aa99",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/939_Mat.mat",
+      "guid": "1b6fcf96d6b0cf94a8daec4556ccd466",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/939_MatFade.mat",
+      "guid": "feff374949e4690469588f298e61eb22",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/939_Sound_1.mat",
+      "guid": "287322be232c6dc42b4fa22cc7ef828a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/939_Sound_3.mat",
+      "guid": "2b68c1ba3f885674d9dada139b5bff57",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/939_Sound_4.mat",
+      "guid": "fa5c618cf3d8a8649b70947160ba99b0",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/CandleSimple.mat",
+      "guid": "c2ae5be30f4848f4692cd295107f9519",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Material/Chair_Material.mat",
+      "guid": "4cdff788b6587be47964b82574a06396",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Material/Font Awesome 5 Free-Solid-900 Atlas Material.mat",
+      "guid": "e8dfa31b3b23b244eaf74b70eb0a2424",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/MTFComander_Body_diffuse.mat",
+      "guid": "128c6d7adde29024ba527b44ce04599c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/MTFComander_Glove_diffuse.mat",
+      "guid": "0874e07e8d4562044ae3fd5f440d60f0",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/MTFComander_Mask_diffuse.mat",
+      "guid": "ff1eef67890055c4ca81025bcddb9478",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/MTFComander_Shoes_diffuse.mat",
+      "guid": "8c24556d9be82af489719026fb2e1394",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/NotoEmoji-Regular Atlas Material.mat",
+      "guid": "20242ea3b7328d24396ebeef9e18dd36",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/NotoSansCJKjp-Regular Atlas Material.mat",
+      "guid": "901e91e888bc4cd4c8e44da85d8a8d86",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/NotoSansSymbols-Regular Atlas Material.mat",
+      "guid": "bf61f51d7767eb349a9a1f6581f32df2",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/Roboto-Bold Atlas Material.mat",
+      "guid": "23c258173b8f3c24db9f342a0045e8f2",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/Roboto-Light SDF Material.mat",
+      "guid": "217baff8aeb404b4487181919195127d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/SCP207 Base L0.mat",
+      "guid": "c71bc49f7274c8e48b94bc40821a62a6",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Material/Table.mat",
+      "guid": "f6c7809db2b0bdb49858fc9b03aa991f",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Material/Teko-Medium SDF_POLAND Material_0.mat",
+      "guid": "a451ead05bfa92a4694c26af38a957e4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/Teko-Regular Atlas Material.mat",
+      "guid": "3bfb3de73a2fc594b8b00f861e4fad53",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/TemplateDissolve.mat",
+      "guid": "1c6b43832a87c43468a2b9501716a9c6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/TutBottom.mat",
+      "guid": "24366f1b522807f4abaac161f28bc95d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/TutTop.mat",
+      "guid": "c0a7ba9495c694947af48b01490ee1bc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/UTF8__079Teko Material.mat",
+      "guid": "4d8b0c6b055977245bcdff9f2a9b559c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/UTF8__Roboto-Bold SDF Material_0.mat",
+      "guid": "a8b3c7e617956db4b9e32203f5092814",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/UTF8__Roboto-Bold SDF Material_2.mat",
+      "guid": "e5980b9efccee09459dd66b6584057d6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/UTF8__Roboto-Bold SDF Material_5.mat",
+      "guid": "2f2bdd33a7d1e5244b681b5603ee0dfa",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Material/UTF8__Roboto-Thin SDF Material.mat",
+      "guid": "0a6e15d2e63e45147abdad7b41eed888",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/207bottle.asset",
+      "guid": "b343a8e9813cc8f48afc0694f89b5e9a",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Mesh/939LPBoady.001.asset",
+      "guid": "6814708d28d159e48a2ebcc71844bf7d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/939LPBoady.LP.001.asset",
+      "guid": "e369f9e191c9261499385569f26f18de",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Body_3.asset",
+      "guid": "a8edd4030d432d9449add9c04f8cd48e",
+      "component": "gifts"
+    },
+    {
+      "path": "Assets/Mesh/Body_7.asset",
+      "guid": "26d0884925bce0748881f3aff510710b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Body_8.asset",
+      "guid": "2fe19af3c1b23694d876d42baaf41f07",
+      "component": "gifts"
+    },
+    {
+      "path": "Assets/Mesh/Body_9.asset",
+      "guid": "64e8ac93b247a3446aa81f1f622b4223",
+      "component": "gifts"
+    },
+    {
+      "path": "Assets/Mesh/Bottoms_4.asset",
+      "guid": "8e335aebb09e47c4a88d488cccb5652a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/CandleSimple_LOD0.asset",
+      "guid": "a4bfbb43379fb1748b16793848d15d77",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Mesh/Chair_LP1.asset",
+      "guid": "149dc55dcf27ec644a69e142cee7f889",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Mesh/Eyes_3.asset",
+      "guid": "c7083dcc5bb34ca4484f0e4ff72d26a6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Gloves.asset",
+      "guid": "4c5d934a6ad6c054c81fb41bd912d162",
+      "component": "gifts"
+    },
+    {
+      "path": "Assets/Mesh/Gloves_0.asset",
+      "guid": "d91551fbc65a1384b9c8a6151a9ebdfe",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Masks_1.asset",
+      "guid": "3f9db78025af86a40aa8fd7df92815a9",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Shoes_4.asset",
+      "guid": "9a24309eb00c9d34194e2e9e9ef2671c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Skins.asset",
+      "guid": "54e2f0aba6875384c8948ab29831dc8b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Spines.asset",
+      "guid": "70497d6498cac7e4bbdc036ce16fad5c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Tooth&Claw.asset",
+      "guid": "9b7f7e98667b7114fbb03f69b411452d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Tops.asset",
+      "guid": "15cf6f7212bff1a45a84bd62c7de3ab3",
+      "component": "gifts"
+    },
+    {
+      "path": "Assets/Mesh/Tops_1.asset",
+      "guid": "96226fb114662134b80a235ac835a7da",
+      "component": "gifts"
+    },
+    {
+      "path": "Assets/Mesh/Tops_2.asset",
+      "guid": "35f0b843bc27fe445ad8e75f620e85f8",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Mesh/Tops_5.asset",
+      "guid": "c1b19854222f5804c81fa52a6675b605",
+      "component": "gifts"
+    },
+    {
+      "path": "Assets/Mirror/Core/NetworkIdentity.cs",
+      "guid": "9b91ecbcc199f4492b9a91e820070131",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/079Teko.asset",
+      "guid": "b2843cddf3c582046834a5241867a251",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/DynamicFont Awesome 5 Free-Solid-900 SDF.asset",
+      "guid": "b15d36c687f2e354d80a8e77999c9260",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/DynamicTeko-Regular.asset",
+      "guid": "6f2018a3defeb4f4dbb486120e5dbbf3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Equipment_POLAND.asset",
+      "guid": "178b5dcf25f22a642900b0df3e9e900d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Footstep 049.asset",
+      "guid": "ed9ec0a89fe93bc4d83c5028c4062502",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Footstep 106.asset",
+      "guid": "28ed53c1d0ec0b14688163616354a767",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Footstep 173.asset",
+      "guid": "7fd3e4992d4e55546a13dcc61c3bf0fc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Footstep 939.asset",
+      "guid": "25796cf31691daf41a6ccd50e8c02f6a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Footstep Chaos.asset",
+      "guid": "4c6d8d427403b6a4c830cdd9858c22e3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Footstep Mtf.asset",
+      "guid": "f35e4e1a3879fc343ada23a9b910ee47",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Gunshot AK.asset",
+      "guid": "e1178d728c08f0745b713ca3e3479401",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Gunshot CV.asset",
+      "guid": "100bc2764107e544d977391bd1c554d0",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Gunshot E11.asset",
+      "guid": "9062abe23b34891468eefb2ab4551af8",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Gunshot FSP.asset",
+      "guid": "da1361d021440dc44b0c72daba998931",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Gunshot Shotgun Doubleshot.asset",
+      "guid": "b048d45d4e6b91c42982420f159f5f96",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Gunshot Shotgun.asset",
+      "guid": "cc2a8c9873aa00c4a8be98b744f6310d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Head Bob Standard.asset",
+      "guid": "ef06acd6aca03254c848d181ba083125",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Human-sized Character Controller Settings Preset.asset",
+      "guid": "1ee07d96485ed32468e70c99e9ab2ce2",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Impersonation 173.asset",
+      "guid": "b587f2a7c8f4cc24786b417d6bbc55b8",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Impersonation ClassD.asset",
+      "guid": "4844d428dde5f234c8c11f4687a93dc4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Impersonation Scientist.asset",
+      "guid": "f119af5a23103be47b1ff9ce3b4a9025",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Inventory.asset",
+      "guid": "a79f6298df60ead45b05307f8f76817c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/List.asset",
+      "guid": "95ad36da5a1770b4584e3bfb01862009",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/NotoEmoji-RegularDynamic.asset",
+      "guid": "1d0bfc442dd3b184582ccd6a2b54f2e5",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/NotoSansCJKjp-RegularDynamic.asset",
+      "guid": "39221b4eb2841a449b01d1cb5803ed88",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/NotoSansSymbols-RegularDynamic.asset",
+      "guid": "4d6b0b06a926b3e4b810afdc8ee2bde4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Radial Menu Preset.asset",
+      "guid": "36fd9e2559fbac9468dd69a7d360599b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Roboto-Bold SDF.asset",
+      "guid": "a0e064a382dedce47b27f3315260a22a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Roboto-Bold SDF_POLAND 1.asset",
+      "guid": "d6028210266530d44b8182ab8c42c27a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Roboto-Light SDF.asset",
+      "guid": "6a68ff3fe1388014f9145c29623b41dc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Roboto-Thin SDF.asset",
+      "guid": "e077f9961b66cc047b61aed257b987a6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/SCP939CameraEffect.asset",
+      "guid": "94d8e183c1ee9b247bd219ab451b0985",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/Teko-Medium SDF.asset",
+      "guid": "3b4edeea135c7384d935025fa9a893c7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/MonoBehaviour/UIOpen.asset",
+      "guid": "1bc852ec144d648468c0a7381affbc63",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Resources/fonts & materials/LiberationSans SDF.asset",
+      "guid": "088b9bc0e9e760d4490257eb78132946",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/CustomCulling/DynamicCullableBase.cs",
+      "guid": "400b76e2c7432215b10f6ad7155e819b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/DeathAnimations/BlurBlackDeathAnimation.cs",
+      "guid": "d095cc8a6953b7f7c03c418d13bc8b5e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/DeathAnimations/HeadSpin.cs",
+      "guid": "9dd6225a30284fb70b5e9edbfb509d6a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/DeathAnimations/RagdollHead.cs",
+      "guid": "ff51b35079af377b16bed78c369c276b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/DeathAnimations/RigidbodyRagdollHead.cs",
+      "guid": "16a748f9beb10524633a022f0da83882",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/DisruptorDeathAnimation.cs",
+      "guid": "ae3a9b9b97128a523b3b34b81c5fccf0",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/Elevators/TransformElevatorFollower.cs",
+      "guid": "1f5bf037a3f1006e4ee25c739199f6cf",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/HitboxIdentity.cs",
+      "guid": "34295c4cdd71880c9d974fc8894f606a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/HoldableButton.cs",
+      "guid": "9add0f0c7afff9bdb3393c920b5b8442",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/FirstPersonControl/CharacterControllerSettingsPreset.cs",
+      "guid": "348c42d8e8d3c56226d0d3ba55ba8499",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/FirstPersonControl/FpcSpectatableModule.cs",
+      "guid": "d8bfb62a32327153f6c48c800d2fda8e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/FirstPersonControl/Thirdperson/ModelSharedSettings.cs",
+      "guid": "1f0dfe49e5372cd99430a6a0ee9d579c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/HUDs/ScpWarningHud.cs",
+      "guid": "212ada4b37bd83ebd662c715e49cbc6c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/HumeShield/DynamicHumeShieldController.cs",
+      "guid": "058442aa9e9e6834c6d7f388acd8a11b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/EnvMimicryMenu.cs",
+      "guid": "302130349e926f0ec2f5ceef1bfc711f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/EnvMimicrySequence.cs",
+      "guid": "79fd6bf29df887c96a5293797ca8d47e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/EnvironmentalMimicry.cs",
+      "guid": "fa6d1bb6a43e4d10a8f1a21ff27b998f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicPointController.cs",
+      "guid": "9dc91b63340103dcb5ea629e4c3cd2b9",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicryConfirmationBox.cs",
+      "guid": "2411e86d40f18ccf9b036e7df7de2c01",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicryExternalButton.cs",
+      "guid": "84df6b0cee7ccd72afb5139bbe1646c8",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicryMainMenu.cs",
+      "guid": "866c8c9d741ede2840509eafbdbf9a80",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicryMenuController.cs",
+      "guid": "fdba131dcc5f9b9c10c0d267130e0ce3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicryPreviewPlayback.cs",
+      "guid": "c99ad0a5f71f04cfe7ce2aa3edbf227e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicryRecorder.cs",
+      "guid": "757128070a5e5d13c62f19239cc6b0cc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicryRecordingIcon.cs",
+      "guid": "38b2fc84f221f52a3824d67439f1a14e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicryRecordingsMenu.cs",
+      "guid": "75df48ceb3d136da31a5f1a66f18d02d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Mimicry/MimicryTransmitter.cs",
+      "guid": "2bc93c00f960683f1a5622e85cbd4eed",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/DoorRippleTrigger.cs",
+      "guid": "30c24ccfaf1be211d413199776653e38",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/FirearmRippleTrigger.cs",
+      "guid": "058095e3a42ab95a8e221133773f9bc1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/FootstepRippleTrigger.cs",
+      "guid": "d24bc4e079e1f75beafd20fa5fba2e1b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/GrenadeRippleTrigger.cs",
+      "guid": "35d6d212292ec8e2495bfbe183185f4c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/HeldItemRippleTrigger.cs",
+      "guid": "dc99eb823ec10a2f9db9816fc3cbac69",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/PickupRippleTrigger.cs",
+      "guid": "b3b898be7332b17af8492e32286f7a63",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/RippleInstance.cs",
+      "guid": "90acefe1ef8bb5584942792448daae48",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/RipplePlayer.cs",
+      "guid": "915716c17e00c3cea78ab69677019f38",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/Scp939RippleCamera.cs",
+      "guid": "85286c02b377c654a1f6771c0079d7e5",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/SpawnableRipplesTrigger.cs",
+      "guid": "0b762cd853a4546bd26410dd6c773bcc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/TeslaRippleTrigger.cs",
+      "guid": "213ad0b123cfa7513a5ac06753724cbb",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Ripples/VoiceChatRippleTrigger.cs",
+      "guid": "0c3f0cded4a95b3e62c9fdae04b802fd",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939AmnesticCloudAbility.cs",
+      "guid": "d8a7cbbe6c733c784a910f47963d5722",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939AmnesticCloudInstance.cs",
+      "guid": "faa9ade0ea1a1ee8483963837974f048",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939BreathController.cs",
+      "guid": "ee71c90431fba05a73335457b5462f23",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939ClawAbility.cs",
+      "guid": "bd65160bff69294a436b9a904864c798",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939DamagedEffect.cs",
+      "guid": "1b19c9452c5a3e8ce2473f1ce9d77ee4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939FocusAbility.cs",
+      "guid": "145fd165557a394d9f3d9c41d4f3bf79",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939FocusKeySync.cs",
+      "guid": "49025f780852b71e2e694934f3b5272e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939FpsAnimator.cs",
+      "guid": "7feed108a7ae9429f4bbe17d95710427",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Hud.cs",
+      "guid": "0d960d2f469c91c679936230d07224f3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939LungeAbility.cs",
+      "guid": "820f1b834d8974ac78d3a0f4d3734f67",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Model.cs",
+      "guid": "cdc11e9851cd735b90c0186549e4613a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939MovementModule.cs",
+      "guid": "2d9d20ec27a7065d971001af012d4a03",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939Role.cs",
+      "guid": "1f2af526704d08f807c4017255d73173",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939VisibilityController.cs",
+      "guid": "7422b0a7b520687754322d6976b97d78",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Scp939/Scp939VoiceModule.cs",
+      "guid": "008916bc3c9515d6e1fe74d4304da6ce",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/PlayableScps/Subroutines/SubroutineManagerModule.cs",
+      "guid": "622ad4f37705806d3ae218516d8634c6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/Ragdolls/BasicRagdoll.cs",
+      "guid": "70bd8809afcd7237a2d255104f7615cb",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/RoleHelp/KeyActionIcon.cs",
+      "guid": "ce3a8a9ca02f930fd180495031942fa5",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/RoleHelp/RoleHelpNameLabel.cs",
+      "guid": "5468e5de6b18ab4705205af31d7ee489",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PlayerRoles/Spectating/SpectatorGuiElement.cs",
+      "guid": "1c1e9d1ff56d4414af2499efec17525d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PostProcessing/BlurEffect.cs",
+      "guid": "c69b5649fb67f1d8a9dd1064e70b7b03",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PostProcessing/Darken.cs",
+      "guid": "ef00e19fddabda492f143f589abb5c87",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PostProcessing/FogEffect.cs",
+      "guid": "478b6024bcf5d1603e183afd69f1d322",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/PostProcessing/Grayscale.cs",
+      "guid": "492a0e207801701d954e7af713a6249e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/RadialMenus/RadialMenuSettings.cs",
+      "guid": "db2fbcb3f67647c94f0ea9e85d00282b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/RagdollAnimationTemplate.cs",
+      "guid": "f1f3d6b35211f62cb544ad000be6e0bc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/RagdollHandRemover.cs",
+      "guid": "0c94d82f124424efd59319b2f225b206",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/TLRSubstringSelector.cs",
+      "guid": "d53c22aa3ab0a9a0000290f9628c3eed",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/TextLanguageReplacer.cs",
+      "guid": "90fb537b6042fd55be7899ba5c939f45",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Scripts/Assembly-CSharp/VoiceChat/Playbacks/SingleBufferPlayback.cs",
+      "guid": "c9e76e7d083e6b6f884ccdf1b65acfab",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Shader/DropletMask.shader",
+      "guid": "829f964f01c35a04085dd5d9ae8886bb",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Shader/Particles_Additive Intensify.shader",
+      "guid": "34475f6846dcb8f44aee50fbfffb2829",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Shader/Particles_Priority Additive.shader",
+      "guid": "651ebc63e94bfe240a34ddee0d133087",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Shader/SCPSL_Dissolve.shader",
+      "guid": "c591bffe30359514cb4410366eaec8f0",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/939_icon_amnestic_cloud.asset",
+      "guid": "68e023a65055c9d49a554d178145f7b9",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/939_icon_focus.asset",
+      "guid": "34df185ea1877f141869d531973365ac",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/939_icon_melee_attack.asset",
+      "guid": "94298bfc3b2028b41a8b9c6b0b1402d7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/939_icon_mmb.asset",
+      "guid": "ad3403c83e526ac49b22ccd065d00cdc",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/939_icon_ultrasensitive_v2.asset",
+      "guid": "997aa4f6ca195f044a5c6bde83b481f3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/939_mimicPoint.asset",
+      "guid": "b243f7da6e2ebd745986ef6a5cf80d51",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/AmnesticAbility.asset",
+      "guid": "317f7606174b63c438fa788925fa2233",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Button.asset",
+      "guid": "a818abd363fd4914abc18561d4f78713",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/EnvMimicryAbility.asset",
+      "guid": "9e1481dc358504e41ba88cd1535ebf21",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory1.asset",
+      "guid": "672566f26f088b14bacbc79d69b2cf81",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory10.asset",
+      "guid": "a88be605cfff6c544aa9169f5d62dddd",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory2.asset",
+      "guid": "d111dcde615365845aa1c1329004c3c1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory3.asset",
+      "guid": "9cf6e69ec719c3d49b985c585f4012db",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory4.asset",
+      "guid": "328148bf9955dad45b86ec35efe5a8f1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory5.asset",
+      "guid": "0ea860bcefa57a54185b062d787f5f09",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory6.asset",
+      "guid": "9ae59993ed49ca34dbe916344a56238f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory7.asset",
+      "guid": "0cd6b580430628742bad68e2aeb32e7c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory8.asset",
+      "guid": "17319faa9ae55b4439af9a192f3ade3f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Inventory9.asset",
+      "guid": "03edba771dad6dc4abe0b03f41e7b7d6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/LoadingCircleCrisp.asset",
+      "guid": "66a7909321d8675418efc91505352f21",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Mouse0_Temporary.asset",
+      "guid": "2cfa506bc50950142a43f4ad267cbfd3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Mouse1_Temporary.asset",
+      "guid": "c15a7755c5e2f52469722808a5f4b2c7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Mouse2_Temporary.asset",
+      "guid": "54d8493459e10414a94cc23dad328fd7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Mouse_X.asset",
+      "guid": "6e47791ce5dcac743ba3281a4e11ce58",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/SelectBox1.asset",
+      "guid": "70b4339dbb8b8974ebb4b915c4d7e238",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/SelectBox2.asset",
+      "guid": "8845e41245aa438438e97d32667beeea",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/SimpleGradient.asset",
+      "guid": "1101597f363408c4f98c961acb5b60aa",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/Slot1.asset",
+      "guid": "bf082267872bac04a99e36e1393b574f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/aquare.asset",
+      "guid": "3b11abf11e822aa47b542eab1354c85a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/mimicryArrow.asset",
+      "guid": "ed9f065ae319a3f4aaed37906e8c689a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/mimicryBack.asset",
+      "guid": "4ed55d37251460243b3d6470936a1a63",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/mimicryDelete.asset",
+      "guid": "1f13968bad821564cab6e05729cd48d6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/mimicryPause.asset",
+      "guid": "4df5221eb4f28634f98f6337a56c462c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/mimicryPreview.asset",
+      "guid": "36ce072db9ad4da4b8748d14d792da49",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/mimicryUse.asset",
+      "guid": "8e84017bb952fc142bee5f648178955b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/scp_939_v2.asset",
+      "guid": "029e5da10fa50b74cb2a4b80d5e558f2",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Sprite/targets.asset",
+      "guid": "0dc6ba40ef0f84c47b58e73683733996",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+      "guid": "e3265ab4bf004d28a9537516768c1c75",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+      "guid": "2e498d1c8094910479dc3e1b768306a4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader",
+      "guid": "14eb328de4b8eb245bb7cea29e4ac00b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+      "guid": "fe393ace9b354375a9cb14cdbbc28be4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "guid": "68e6db2ebdc24f95958faec2be5558d6",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/049_Icon.png",
+      "guid": "81e633d25ca58f84b814742c92e31af8",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/079Teko Atlas.png",
+      "guid": "3452fa38a759c3c409fa3579ea5dda46",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/106_Icon.png",
+      "guid": "ca39966ea2900ca4399509ce964bdf06",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/173_Icon.png",
+      "guid": "6b178cb38c7667d4ba43c741531ef818",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_Icon.png",
+      "guid": "9b55f16f152ad484faa8ceae296f33b7",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_cat_footsteps.png",
+      "guid": "942637894ae029147b4b57be8a11ed09",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_cat_gunshots.png",
+      "guid": "a28337fe1a4714e41b81bd6dddda77b1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_cat_impersonation.png",
+      "guid": "f3a236545709d6c4aadff353cdc2453a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_icon_amnestic_cloud.png",
+      "guid": "b9d77a99e255e534b8600d093dd716a4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_icon_focus.png",
+      "guid": "4e401076d14b8f84dbc58291607274c2",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_icon_melee_attack.png",
+      "guid": "c92a6a4ea107e7a488dcd5d84a37c2b8",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_icon_mmb.png",
+      "guid": "d7f050fd7a423b749aa7e1658e6c1b32",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_icon_ultrasensitive_v2.png",
+      "guid": "82d1ead3349b43f4db748b6f82b9daff",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_metallicSmooth.png",
+      "guid": "bc24a7b63428cea4db9ae45648a47ec1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_mimicPoint.png",
+      "guid": "24cfa07c7972eec4092389e907827681",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_v6ArmEmit01.png",
+      "guid": "9e400f80a4d40af4b95e124e26781dac",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_v6_AmbientOcclusion.png",
+      "guid": "f04552e00ddb58b43bfe912bd0e9c361",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_v6_Diffuse.png",
+      "guid": "171e91fef3cc9404c8d07903d89d066d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/939_v6_Normalmap.png",
+      "guid": "2cdceafffbe15a943b6ef39083b59f98",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/AKIcon.png",
+      "guid": "440dc664fe41e7b4e820db8ff9e19abb",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/AmnesticAbility.png",
+      "guid": "70ee166dd5d711b4c8d5920be42037ef",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Button.png",
+      "guid": "98ba35799eb771c4fbe06de5b66da468",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Chair_Mat_AO.png",
+      "guid": "edfeacbcc01f5184f9d4dc6270f20060",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/Chair_Mat_AlbedoTransparency.png",
+      "guid": "c7d73eb1c85fcc64fbc2a5df84744f64",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/Chair_Mat_MetallicSmoothness.png",
+      "guid": "e14e6bb8212e5f0479dcb01e0496b7a6",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/Chair_Mat_Normal.png",
+      "guid": "7d35a801d8cff4b408657e4b55ec213e",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/Chaos_Icon.png",
+      "guid": "b741e572ea6d2e049aac05a42a2f4643",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/CircleCloudMarked.png",
+      "guid": "e8a949de96378f743b3924c694a3557d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/CircleCloudRadius.png",
+      "guid": "9b137c79239dce3499d01a867a49d31a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/ClassD_Icon.png",
+      "guid": "0ad55c9a0dc867f4897d47e666a9070b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/CrossvecIcon.png",
+      "guid": "474d17fc50b722e4396a489a5ba10451",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/E11SRIcon.png",
+      "guid": "7ad46f99d0ae4724f833fc4245a000e4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/EnvMimicryAbility.png",
+      "guid": "1394c94449e1c6b45b65c1d2220e139c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Equipment_POLAND Atlas.png",
+      "guid": "17bbda9f4bd85dc49aaf3b4d8b910a21",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Fsp9Icon.png",
+      "guid": "437811b5e799f9940bef05188687048e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Guard_Icon.png",
+      "guid": "11f06be8a3025a44b972af1428b06e6e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory Atlas.png",
+      "guid": "43680ce5a3bf14548af33ce365152eb4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory1.png",
+      "guid": "f5072773610132d48908d461e21cc146",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory10.png",
+      "guid": "d9cc40398741c8f419a4cdd4a5a918ac",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory2.png",
+      "guid": "8ba6308e7031f8a4da8a16b6d9f5d99c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory3.png",
+      "guid": "172583d4593d9634aae2d25666ff15b2",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory4.png",
+      "guid": "a3076f76c5cc4654dadcd803e68c00a3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory5.png",
+      "guid": "e5f905d3f4e977c44886f813ef79f893",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory6.png",
+      "guid": "855075b34961eb646b01e1b2ac8c1179",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory7.png",
+      "guid": "3d98b815659dc5c409fb045763ac69d8",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory8.png",
+      "guid": "05b4381ac002fca4591be33932cc9e4a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Inventory9.png",
+      "guid": "6e21232d20d4bc84faaba1c809468c55",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/List Atlas.png",
+      "guid": "3fb40670d8bad5e41a58e7e5d60db98b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/LoadingCircleCrisp.png",
+      "guid": "c415ef2dc5384b24683ed67ed293b455",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/LoadingCircle_0.png",
+      "guid": "0ff23cead817db04f9674628a69f63c8",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Body_diffuse.png",
+      "guid": "7709bbe781d5ac04bbb9ca3393baca6a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Body_normal.png",
+      "guid": "680af1a2d611b3a41873399d4f822933",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Bottom_normal.png",
+      "guid": "388c98dc6cc36a94bbf5417525426b9b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Glove_diffuse.png",
+      "guid": "858a0d48450434c4181da802e7496dca",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Glove_normal.png",
+      "guid": "7c647330779f5bf4795343ec45813ba3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Mask_diffuse.png",
+      "guid": "2bacc563a281ba643aea3bb3698ece18",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Mask_normal.png",
+      "guid": "aff7e3580ec24ba44aae6b9d855d5f03",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Shoes_diffuse.png",
+      "guid": "7cf8bfa2d8b573640bc232382e66385b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Shoes_normal.png",
+      "guid": "bf2406ccdf020c84083f2669ea7030e1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/MTFComander_Top_normal.png",
+      "guid": "dae30fe9d09a0604fa4762207d9a944e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Mat_207_AlbedoTransparency.png",
+      "guid": "4450b5f2fb33fed4793d331d835ae587",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/Mat_207_MetallicSmoothness.png",
+      "guid": "ac7faabefc0d04a4485ecbb81f0d50d2",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/Mat_207_Normal.png",
+      "guid": "d7234199536bb894fa43911af5abef49",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/Mouse0_Temporary.png",
+      "guid": "9ce4d5e62b92f3145988eb7b4a929045",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Mouse1_Temporary.png",
+      "guid": "5d96c4e65973684459fa96bc5a608432",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Mouse2_Temporary.png",
+      "guid": "5bd4c67a9cf248a4992caa6c138eddd5",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Mouse_X.png",
+      "guid": "f619478fb6ad7664ca924d621b4bf3ca",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Roboto-Bold SDF_POLAND 1 Atlas.png",
+      "guid": "e128c67e072788d48b263a92490c5293",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Roboto-Light SDF Atlas.png",
+      "guid": "7badcbb743793494cbca92e12dbc685d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Roboto-Thin SDF Atlas.png",
+      "guid": "e0c0ae6ff0427ee4abb5308fd73c1c6e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Round_Wave_02 (1).png",
+      "guid": "268c5b9e3767d4543846a65f70844c63",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Scientist_Icon_0.png",
+      "guid": "a0bfdebd3caf0d042b2822926af0c21a",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/SelectBox1.png",
+      "guid": "b29f081f3ffa8194eaa1a621409c079c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/SelectBox2.png",
+      "guid": "3db86be0956ee79418f935975d6310e2",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/ShotgunIcon.png",
+      "guid": "d7341e711a4c13d43816f1f6d7dc1437",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/SimpleGradient.png",
+      "guid": "d0e26972d1842f74d94b8c83c0473a33",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot1.png",
+      "guid": "9b8c85cb4a22d98468af28ee490042d1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot10.png",
+      "guid": "20578bac2b4d06841a32f3585ec4fe77",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot2.png",
+      "guid": "c212ff88aff26c14eafa5d3226011677",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot3.png",
+      "guid": "5098328d6ae852b4697ba61721b8c59c",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot4.png",
+      "guid": "660d015fa4418394b9f1dc2b0faa7bc1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot5.png",
+      "guid": "6922260e8b557204e92338d07d45156f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot6.png",
+      "guid": "ef3a32148bb9ea24d8596747d5b2ff66",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot7.png",
+      "guid": "bb517be03b6544542a10d4d5f2fb3664",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot8.png",
+      "guid": "c5da8e0edb73f2c4f9120f06716da76d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Slot9.png",
+      "guid": "986a89dc1431209419819ac63ce632db",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/Table_DefaultMaterial_AlbedoTransparency.png",
+      "guid": "184c36a2584c4fe4ab4d4125be99277d",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/Table_DefaultMaterial_MetallicSmoothness.png",
+      "guid": "7179290269113eb46977d75de91c5770",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/Table_DefaultMaterial_Normal.png",
+      "guid": "96a5ee09aa2583f4584d801a8b176105",
+      "component": "dates"
+    },
+    {
+      "path": "Assets/Texture2D/TutBot.png",
+      "guid": "cb70b2dd5e0100b478568a51aeb2dee3",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/TutTop.png",
+      "guid": "e1c8c9638e7be734aaf19e30af9e2688",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/WeaponDissolveGradient.png",
+      "guid": "454c461f09ab6e041858649099a10b00",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/aquare.png",
+      "guid": "fffcb5cd1bb2e3248b7e98002be9f572",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/dissolve-guide.png",
+      "guid": "07a79cafc94b0ef43949f0b02caf8be4",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/mimicryArrow.png",
+      "guid": "7098c41a1e607f24a9f4fe4f22c96e12",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/mimicryBack.png",
+      "guid": "d8da8daea45611849a1711b69d8ddccd",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/mimicryDelete.png",
+      "guid": "83db6adaba52a3d4cb084476550501a1",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/mimicryPause.png",
+      "guid": "9b9e3a909d14fe349acbf5ce771cf15d",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/mimicryPreview.png",
+      "guid": "888f56c47b9877a4e82ab2b5b4a3815e",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/mimicryUse.png",
+      "guid": "e4d2c5644cf56354bba35911742417ac",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/ripple_normal.png",
+      "guid": "3abf2e8be3d1c824aa3876305d78645f",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/scp_939_v2.png",
+      "guid": "2f90cc490d9bf784ebffcfb0d30c8e1b",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/snow_texture_512.png",
+      "guid": "ef4cbb131722bd44080972b99cfd9880",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/targets.png",
+      "guid": "ffef7ce8ca27cf941b0fc95fcf8316a0",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/Texture2D/water_drops_anim.png",
+      "guid": "f9647f06fea3eac47a5677902f88a471",
+      "component": "outfit"
+    },
+    {
+      "path": "Assets/UBER/Shaders/_Metallic/_UBERShader_Metallic_POMAdvanced.shader",
+      "guid": "b0fe4483451107844ba545c3a3228886",
+      "component": "dates"
+    }
+  ]
+}

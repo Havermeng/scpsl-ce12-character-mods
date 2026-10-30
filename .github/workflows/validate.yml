@@ -1,0 +1,21 @@
+name: Validate mod packages
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9
+        with:
+          dotnet-version: 8.0.x
+      - name: Test transactional installer engine
+        run: dotnet run --project tests/Engine.Tests.csproj --configuration Release -- "${{ runner.temp }}/scp-ce12-tests"
+      - name: Build both Unity packages
+        run: python3 tools/build_packages.py
+      - name: Audit packages and payloads
+        run: python3 tools/audit_packages.py

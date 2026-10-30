@@ -1,0 +1,11 @@
+build/
+._codex_release_workspace
+dist/
+*.unitypackage
+*.dll
+*.pdb
+**/bin/
+**/obj/
+**/__pycache__/
+*.pyc
+.DS_Store
